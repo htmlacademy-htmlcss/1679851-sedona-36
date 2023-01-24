@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
-* Студент: [Nastassja Tomilova](https://up.htmlacademy.ru/htmlcss/36/user/1679851).
-* Наставник: `Неизвестно`.
+* Студент: [Анастасия Томилова](https://up.htmlacademy.ru/htmlcss/36/user/1679851).
+* Наставник: [Ольга Ветер](https://htmlacademy.ru/profile/id73199).
 
 ---
 
