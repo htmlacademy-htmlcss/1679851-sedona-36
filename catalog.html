@@ -46,23 +46,23 @@
       <form action="https://echo.htmlacademy.ru/" method="post">
         <h2 class="visually-hidden">Параметры подбора</h2>
 
-        <section>
-          <h3>Инфраструктура</h3>
+        <fieldset>
+          <legend class="catalog-filter-title">Инфраструктура</legend>
           <ul>
             <li>
-              <label><input type="checkbox" checked id="water_pool"> Бассейн</label>
+              <label><input type="checkbox" checked name="water_pool"> Бассейн</label>
             </li>
             <li>
-              <label><input type="checkbox" checked id="parking"> Парковка</label>
+              <label><input type="checkbox" checked name="parking"> Парковка</label>
             </li>
             <li>
-              <label><input type="checkbox" id="wi_fi"> Wi-Fi</label>
+              <label><input type="checkbox" name="wi_fi"> Wi-Fi</label>
             </li>
           </ul>
-        </section>
+        </fieldset>
 
-        <section>
-          <h3>Тип Жилья</h3>
+        <fieldset>
+          <legend class="catalog-filter-title">Тип Жилья</legend>
           <ul>
             <li>
               <label><input type="radio" name="housing_type" value="hotel" checked>Гостиница</label>
@@ -74,91 +74,95 @@
               <label><input type="radio" name="housing_type" value="apartment">Апартаменты</label>
             </li>
           </ul>
-        </section>
+        </fieldset>
 
-        <section>
-          <h3>Стоимость, ₽:</h3>
-          <div>
-            <p>
-              <label>
-                <input type="number" value="0"> от
-              </label>
-              <label>
-                <input type="number" value="9000"> до
-              </label>
-              <button><span>Применить</span></button>
-            </p>
-            <p>
-              <progress value="9000" max="12000">Стоимость</progress>
-              <button type="button"><span>Сбросить</span></button>
-            </p>
-          </div>
-        </section>
+        <fieldset>
+          <legend class="catalog-filter-title">Стоимость, ₽:</legend>
+          <p>
+            <label>
+              <input type="number" name="price_from" value="0"> от
+            </label>
+            <label>
+              <input type="number" name="price_to" value="9000"> до
+            </label>
+          </p>
+          <progress value="9000" max="12000">Стоимость</progress>
+        </fieldset>
+
+        <button type="button">Сбросить</button>
+        <button>Применить</button>
       </form>
 
       <section>
-        <p>
-        <h2>Найдено гостиниц: <span>38</span></h2>
-        <select name="sort_type" aria-label="Сортировка">
-          <option value="cheap" selected>Сначала дешевые</option>
-          <option value="popular">По популярности</option>
-        </select>
+        <header>
+          <h2>Найдено гостиниц: <span>38</span></h2>
+          <select name="sort_type" aria-label="Сортировка">
+            <option value="cheap" selected>Сначала дешевые</option>
+            <option value="popular">По популярности</option>
+          </select>
 
-        <button type="button" name="show_icons"><img src="#" alt="Плитка"></button>
-        <button type="button" name="show_gallery"><img src="#" alt="Галерея"></button>
-        <button type="button" name="show_list"><img src="#" alt="Список"></button>
+          <button type="button" name="show_icons"><img src="#" alt="Плитка"></button>
+          <button type="button" name="show_gallery"><img src="#" alt="Галерея"></button>
+          <button type="button" name="show_list"><img src="#" alt="Список"></button>
+        </header>
 
-        <figure>
-          <img src="#" alt="Превью гостиницы 1">
-          <figcaption>
-            <h3>Amara Resort & Spa</h3>
-            <span>Гостиница</span> <span>От 4000 ₽</span>
+        <ul>
+          <li>
+            <a href="#">
+              <img src="#" alt="Превью гостиницы 1">
+              <h3>Amara Resort & Spa</h3>
+            </a>
+            <p>Гостиница От <b>4000 ₽</b></p>
             <p>
               <a href="#">Подробнее</a>
               <button type="button">В избранное</button>
             </p>
-            <div class="stars"></div> <span>Рейтинг: 8,5</span>
-          </figcaption>
-        </figure>
+            <div class="stars"></div>
+            <p>Рейтинг: 8,5</p>
+          </li>
 
-        <figure>
-          <img src="#" alt="Превью гостиницы 2">
-          <figcaption>
-            <h3>Villas at Poco Diablo</h3>
-            <span>Гостиница</span> <span>От 5000 ₽</span>
+          <li>
+            <a href="#">
+              <img src="#" alt="Превью гостиницы 2">
+              <h3>Villas at Poco Diablo</h3>
+            </a>
+            <p>Гостиница От <b>5000 ₽</b></p>
             <p>
               <a href="#">Подробнее</a>
               <button type="button">В избранное</button>
             </p>
-            <div class="stars"></div> <span>Рейтинг: 9,2</span>
-          </figcaption>
-        </figure>
+            <div class="stars"></div>
+            <p>Рейтинг: 9,2</p>
+          </li>
 
-        <figure>
-          <img src="#" alt="Превью гостиницы 3">
-          <figcaption>
-            <h3>Desert Quail Inn</h3>
-            <span>Гостиница</span> <span>От 2500 ₽</span>
+          <li>
+            <a href="#">
+              <img src="#" alt="Превью гостиницы 3">
+              <h3>Desert Quail Inn</h3>
+            </a>
+            <p>Гостиница От <b>2500 ₽</b></p>
             <p>
               <a href="#">Подробнее</a>
               <button type="button">В избранное</button>
             </p>
-            <div class="stars"></div> <span>Рейтинг: 6,9</span>
-          </figcaption>
-        </figure>
+            <div class="stars"></div>
+            <p>Рейтинг: 6,9</p>
+          </li>
 
-        <figure>
-          <img src="#" alt="Превью гостиницы 4">
-          <figcaption>
-            <h3>GreenTree Inn</h3>
-            <span>Гостиница</span> <span>От 1500 ₽</span>
+          <li>
+            <a href="#">
+              <img src="#" alt="Превью гостиницы 4">
+              <h3>GreenTree Inn</h3>
+            </a>
+            <p>Гостиница От <b>1500 ₽</b></p>
             <p>
               <a href="#">Подробнее</a>
               <button type="button">В избранное</button>
             </p>
-            <div class="stars"></div> <span>Рейтинг: 5,0</span>
-          </figcaption>
-        </figure>
+            <div class="stars"></div>
+            <p>Рейтинг: 5,0</p>
+          </li>
+        </ul>
 
         <p>
           <button type="button" name="page_1">1</button>
