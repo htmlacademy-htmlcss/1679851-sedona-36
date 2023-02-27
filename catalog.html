@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HTML Academy: Седона</title>
+  </head>
+
+  <body>
+
+    <header>
+      <a>
+        <img src="index.html" alt="Логотип сайта городка Седона">
+      </a>
+
+      <nav>
+        <ul>
+          <li>
+            <a href="index.html">Главная</a>
+          </li>
+          <li>
+            <a href="#">О Седоне</a>
+          </li>
+          <li>
+            <a href="#">Гостиницы</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div>
+        <button type="button">
+          <img src="#" alt="Лупа">
+        </button>
+        <button type="button">
+          <img src="#" alt="Лайк">
+        </button>
+        <button type="button">
+          Хочу сюда!
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <h1>Гостиницы Седоны</h1>
+      <form action="https://echo.htmlacademy.ru/" method="post">
+        <h2 class="visually-hidden">Параметры подбора</h2>
+
+        <section>
+          <h3>Инфраструктура</h3>
+          <ul>
+            <li>
+              <label><input type="checkbox" checked id="water_pool"> Бассейн</label>
+            </li>
+            <li>
+              <label><input type="checkbox" checked id="parking"> Парковка</label>
+            </li>
+            <li>
+              <label><input type="checkbox" id="wi_fi"> Wi-Fi</label>
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>Тип Жилья</h3>
+          <ul>
+            <li>
+              <label><input type="radio" name="housing_type" value="hotel" checked>Гостиница</label>
+            </li>
+            <li>
+              <label><input type="radio" name="housing_type" value="motel">Мотель</label>
+            </li>
+            <li>
+              <label><input type="radio" name="housing_type" value="apartment">Апартаменты</label>
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>Стоимость, ₽:</h3>
+          <div>
+            <p>
+              <label>
+                <input type="number" value="0"> от
+              </label>
+              <label>
+                <input type="number" value="9000"> до
+              </label>
+              <button><span>Применить</span></button>
+            </p>
+            <p>
+              <progress value="9000" max="12000">Стоимость</progress>
+              <button type="button"><span>Сбросить</span></button>
+            </p>
+          </div>
+        </section>
+      </form>
+
+      <section>
+        <p>
+        <h2>Найдено гостиниц: <span>38</span></h2>
+        <select name="sort_type">
+          <option value="cheap" selected>Сначала дешевые</option>
+          <option value="popular">По популярности</option>
+        </select>
+
+        <button type="button" name="show_icons"><img src="#" alt="Плитка"></button>
+        <button type="button" name="show_gallery"><img src="#" alt="Галерея"></button>
+        <button type="button" name="show_list"><img src="#" alt="Список"></button>
+
+        <figure>
+          <img src="#" alt="Превью гостиницы 1">
+          <figcaption>
+            <h3>Amara Resort & Spa</h3>
+            <span>Гостиница</span> <span>От 4000 ₽</span>
+            <p>
+              <a href="#">Подробнее</a>
+              <button type="button">В избранное</button>
+            </p>
+            <div class="stars"></div> <span>Рейтинг: 8,5</span>
+          </figcaption>
+        </figure>
+
+        <figure>
+          <img src="#" alt="Превью гостиницы 2">
+          <figcaption>
+            <h3>Villas at Poco Diablo</h3>
+            <span>Гостиница</span> <span>От 5000 ₽</span>
+            <p>
+              <a href="#">Подробнее</a>
+              <button type="button">В избранное</button>
+            </p>
+            <div class="stars"></div> <span>Рейтинг: 9,2</span>
+          </figcaption>
+        </figure>
+
+        <figure>
+          <img src="#" alt="Превью гостиницы 3">
+          <figcaption>
+            <h3>Desert Quail Inn</h3>
+            <span>Гостиница</span> <span>От 2500 ₽</span>
+            <p>
+              <a href="#">Подробнее</a>
+              <button type="button">В избранное</button>
+            </p>
+            <div class="stars"></div> <span>Рейтинг: 6,9</span>
+          </figcaption>
+        </figure>
+
+        <figure>
+          <img src="#" alt="Превью гостиницы 4">
+          <figcaption>
+            <h3>GreenTree Inn</h3>
+            <span>Гостиница</span> <span>От 1500 ₽</span>
+            <p>
+              <a href="#">Подробнее</a>
+              <button type="button">В избранное</button>
+            </p>
+            <div class="stars"></div> <span>Рейтинг: 5,0</span>
+          </figcaption>
+        </figure>
+
+        <p>
+          <button type="button" name="page_1">1</button>
+          <button type="button" name="page_2">2</button>
+          <button type="button" name="page_3">3</button>
+          <button type="button" name="page_4">4</button> ...
+          <button type="button" name="page_10">10</button>
+        </p>
+      </section>
+
+      <form action="https://echo.htmlacademy.ru/" method="post">
+        <div>
+          <p><span>Подпишитесь на рассылку</span></p>
+          <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
+        </div>
+        <input type="email" name="user_email" placeholder="Ваш e-mail" required>
+        <button>Подписаться</button>
+      </form>
+    </main>
+
+    <footer>
+      <h2 class="visually-hidden">Контакты</h2>
+      <address>
+        <div>
+          <a href="https://vk.com/htmlacademy" class="visually-hidden">
+            <span class="visually-hidden">ВКонтакте</span>
+          </a>
+
+          <a href="tg://resolve?domain=htmlacademy" class="visually-hidden">
+            <span class="visually-hidden">Телеграм</span>
+          </a>
+
+          <a href="https://www.youtube.com/user/htmlacademyru">
+            <span class="visually-hidden">Ютюб</span>
+          </a>
+        </div>
+
+        <div>
+          <a href="tel:+78128121212">+7 (812) 812-12-12</a>
+        </div>
+      </address>
+
+      <a href="https://htmlacademy.ru/">
+        <img src="#" alt="HTML Academy">
+      </a>
+    </footer>
+
+  </body>
+
+</html>
