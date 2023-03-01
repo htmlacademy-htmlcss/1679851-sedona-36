@@ -28,70 +28,79 @@
         </ul>
       </nav>
 
-      <div>
+      <p>
         <button type="button">
           <img src="#" alt="Лупа">
         </button>
         <button type="button">
-          <img src="#" alt="Лайк">
+          <img src="#" alt="Избранное"><span>12</span>
         </button>
         <button type="button">
           Хочу сюда!
         </button>
-      </div>
+      </p>
     </header>
 
     <main>
+
       <h1>Гостиницы Седоны</h1>
-      <form action="https://echo.htmlacademy.ru/" method="post">
-        <h2 class="visually-hidden">Параметры подбора</h2>
 
-        <fieldset>
-          <legend class="catalog-filter-title">Инфраструктура</legend>
-          <ul>
-            <li>
-              <label><input type="checkbox" checked name="water_pool"> Бассейн</label>
-            </li>
-            <li>
-              <label><input type="checkbox" checked name="parking"> Парковка</label>
-            </li>
-            <li>
-              <label><input type="checkbox" name="wi_fi"> Wi-Fi</label>
-            </li>
-          </ul>
-        </fieldset>
+      <section>
+        <h2 class="visually-hidden">Параметры поиска гостиниц</h2>
 
-        <fieldset>
-          <legend class="catalog-filter-title">Тип Жилья</legend>
-          <ul>
-            <li>
-              <label><input type="radio" name="housing_type" value="hotel" checked>Гостиница</label>
-            </li>
-            <li>
-              <label><input type="radio" name="housing_type" value="motel">Мотель</label>
-            </li>
-            <li>
-              <label><input type="radio" name="housing_type" value="apartment">Апартаменты</label>
-            </li>
-          </ul>
-        </fieldset>
+        <form action="https://echo.htmlacademy.ru/" method="post">
+          <fieldset>
+            <legend class="catalog-filter-title">Инфраструктура</legend>
+            <ul>
+              <li>
+                <label><input type="checkbox" checked name="water_pool"> Бассейн</label>
+              </li>
+              <li>
+                <label><input type="checkbox" checked name="parking"> Парковка</label>
+              </li>
+              <li>
+                <label><input type="checkbox" name="wi_fi"> Wi-Fi</label>
+              </li>
+            </ul>
+          </fieldset>
 
-        <fieldset>
-          <legend class="catalog-filter-title">Стоимость, ₽:</legend>
-          <p>
-            <label>
-              <input type="number" name="price_from" value="0"> от
-            </label>
-            <label>
-              <input type="number" name="price_to" value="9000"> до
-            </label>
-          </p>
-          <progress value="9000" max="12000">Стоимость</progress>
-        </fieldset>
+          <fieldset>
+            <legend class="catalog-filter-title">Тип Жилья</legend>
+            <ul>
+              <li>
+                <label><input type="radio" name="housing_type" value="hotel" checked>Гостиница</label>
+              </li>
+              <li>
+                <label><input type="radio" name="housing_type" value="motel">Мотель</label>
+              </li>
+              <li>
+                <label><input type="radio" name="housing_type" value="apartment">Апартаменты</label>
+              </li>
+            </ul>
+          </fieldset>
 
-        <button type="button">Сбросить</button>
-        <button>Применить</button>
-      </form>
+          <fieldset>
+            <legend class="catalog-filter-title">Стоимость, ₽:</legend>
+            <p>
+              <label>
+                <input type="number" name="price_from" value="0"> от
+              </label>
+              <label>
+                <input type="number" name="price_to" value="9000"> до
+              </label>
+            </p>
+
+            <div class="visually-hidden">Ползунок стоимости</div>
+            <p>
+              <input type="number" name="price_from" value="0">
+              <input type="number" name="price_to" value="9000">
+            </p>
+          </fieldset>
+
+          <button type="button">Сбросить</button>
+          <button>Применить</button>
+        </form>
+      </section>
 
       <section>
         <header>
@@ -173,14 +182,18 @@
         </p>
       </section>
 
-      <form action="https://echo.htmlacademy.ru/" method="post">
-        <div>
-          <p><span>Подпишитесь на рассылку</span></p>
-          <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
-        </div>
-        <input type="email" name="user_email" placeholder="Ваш e-mail" required>
-        <button>Подписаться</button>
-      </form>
+      <section>
+        <h2 class="visually-hidden">Подписка на рассылку</h2>
+        <form action="https://echo.htmlacademy.ru/" method="post">
+          <div>
+            <p><span>Подпишитесь на рассылку</span></p>
+            <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
+          </div>
+          <input type="email" name="user_email" placeholder="Ваш e-mail" required>
+          <button>Подписаться</button>
+        </form>
+      </section>
+
     </main>
 
     <footer>
