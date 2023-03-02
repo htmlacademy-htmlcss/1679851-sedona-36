@@ -10,8 +10,8 @@
   <body>
 
     <header>
-      <a>
-        <img src="#" alt="Логотип сайта городка Седона">
+      <a href="#">
+        <span class="visually-hidden">Логотип сайта городка Седона.</span>
       </a>
 
       <nav>
@@ -29,12 +29,12 @@
       </nav>
 
       <p>
-        <button type="button">
-          <img src="#" alt="Лупа">
-        </button>
-        <button type="button">
-          <img src="#" alt="Избранное"><span>12</span>
-        </button>
+        <span class="visually-hidden">Поиск.</span>
+        <button type="button"></button>
+
+        <span class="visually-hidden">Избранное.</span>
+        <button type="button"></button><span>12</span>
+
         <button type="button">
           Хочу сюда!
         </button>
@@ -43,18 +43,30 @@
 
     <main>
 
+      <h1 class="visually-hidden">Городок Седона.</h1>
+
       <section>
-        <h1 class="visually-hidden">Город Седона</h1>
+        <h2 class="visually-hidden">Приветствие.</h2>
+        <div></div>
+        <img src="images/welcome.svg" alt="Welcome to the gorgeous Sedona. Because the Grand Canyon sucks!" width="458"
+          height="352">
+      </section>
+
+      <section>
+        <h2 class="visually-hidden">О Седоне.</h2>
         <p><span>Седона – небольшой городок в Аризоне, заслуживающий большего!</span></p>
         <p>Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
       </section>
 
       <section>
-        <h2 class="visually-hidden">Туристические преимущества</h2>
+        <h2 class="visually-hidden">Туристические преимущества.</h2>
         <ul>
           <li>
             <h3><span>Настоящий городок</span></h3>
             <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+          </li>
+          <li>
+            <img src="images/landscapes/garden.jpg" alt="Вид на сад." width="800" height="385">
           </li>
           <li>
             <h3><span>Небольшая площадь</span></h3>
@@ -67,6 +79,9 @@
           <li>
             <h3><span>Мало туристов</span></h3>
             <p>Большинство едет в Гранд Каньон и толпится там</p>
+          </li>
+          <li>
+            <img src="images/landscapes/mountains_2.jpg" alt="Вид на скалы." width="800" height="385">
           </li>
           <li>
             <h3><span>Там есть мост дьявола</span></h3>
@@ -122,19 +137,19 @@
     </main>
 
     <footer>
-      <h2 class="visually-hidden">Контакты</h2>
+      <h2 class="visually-hidden">Контакты.</h2>
       <address>
         <div>
           <a href="https://vk.com/htmlacademy" class="visually-hidden">
-            <span class="visually-hidden">ВКонтакте</span>
+            <span class="visually-hidden">ВКонтакте.</span>
           </a>
 
           <a href="tg://resolve?domain=htmlacademy" class="visually-hidden">
-            <span class="visually-hidden">Телеграм</span>
+            <span class="visually-hidden">Телеграм.</span>
           </a>
 
           <a href="https://www.youtube.com/user/htmlacademyru">
-            <span class="visually-hidden">Ютюб</span>
+            <span class="visually-hidden">Ютюб.</span>
           </a>
         </div>
 
@@ -144,7 +159,7 @@
       </address>
 
       <a href="https://htmlacademy.ru/">
-        <img src="#" alt="HTML Academy">
+        <span class="visually-hidden">Сайт HTML Academy.</span>
       </a>
     </footer>
 
