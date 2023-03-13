@@ -4,6 +4,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="styles/styles.css" rel="stylesheet">
     <title>HTML Academy: Седона</title>
   </head>
 
@@ -14,31 +15,34 @@
         <span class="visually-hidden">Логотип сайта городка Седона.</span>
       </a>
 
-      <nav>
+      <nav class="header-navigation">
         <ul>
           <li>
-            <a href="index.html">Главная</a>
+            <a class="header-button" href="index.html">Главная</a>
           </li>
           <li>
-            <a href="#">О Седоне</a>
+            <a class="header-button" href=" #">О&nbsp;Седоне</a>
           </li>
           <li>
-            <a href="#">Гостиницы</a>
+            <a class="header-button" href=" #">Гостиницы</a>
           </li>
         </ul>
       </nav>
 
-      <p>
+      <div>
         <span class="visually-hidden">Поиск.</span>
-        <button type="button"></button>
+        <button type="button" class="header-button search-button"></button>
 
         <span class="visually-hidden">Избранное.</span>
-        <button type="button"></button><span>12</span>
+        <button type="button" class="header-button favotites-button"></button>
+        <div class="favorites-count-wrapper">
+          <span class="favorites-count">12</span>
+        </div>
 
-        <button type="button">
+        <button type="button" class="header-brown-button">
           Хочу сюда!
         </button>
-      </p>
+      </div>
     </header>
 
     <main>
@@ -118,7 +122,7 @@
         <ul>
           <li>
             <a href="#">
-              <img src="images/hotels/hotel_1.jpg" alt="Гостиница 1." width="300" height="212">
+              <img src="images/hotels/hotel_1.jpg" alt="Вид из ущелья на звездное небо." width="300" height="212">
               <h3>Amara Resort & Spa</h3>
             </a>
             <p>Гостиница От <b>4000 ₽</b></p>
@@ -132,7 +136,8 @@
 
           <li>
             <a href="#">
-              <img src="images/hotels/hotel_2.jpg" alt="Гостиница 2." width="300" height="212">
+              <img src="images/hotels/hotel_2.jpg"
+                alt="Радуа опускается в скалистые горы на горизонте на фоне темного неба." width="300" height="212">
               <h3>Villas at Poco Diablo</h3>
             </a>
             <p>Гостиница От <b>5000 ₽</b></p>
@@ -146,7 +151,8 @@
 
           <li>
             <a href="#">
-              <img src="images/hotels/hotel_3.jpg" alt="Гостиница 3." width="300" height="212">
+              <img src="images/hotels/hotel_3.jpg"
+                alt="Скалистая гора поросшая деревьями и кустами на фоне ясного неба." width="300" height="212">
               <h3>Desert Quail Inn</h3>
             </a>
             <p>Гостиница От <b>2500 ₽</b></p>
@@ -160,7 +166,8 @@
 
           <li>
             <a href="#">
-              <img src="images/hotels/hotel_4.jpg" alt="Гостиница 4." width="300" height="212">
+              <img src="images/hotels/hotel_4.jpg" alt="Красный выступ скалы озаряемый закатом на фоне звездного неба."
+                width="300" height="212">
               <h3>GreenTree Inn</h3>
             </a>
             <p>Гостиница От <b>1500 ₽</b></p>

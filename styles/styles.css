@@ -1,0 +1,92 @@
+@font-face {
+  font-family: "PT Sans";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-weight: 700;
+  font-style: normal;
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+body {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+  color: #333333;
+  background-color: #FFFFFF;
+}
+
+.visually-hidden {
+  visibility: hidden;
+}
+
+/* header content */
+
+.header-navigation a {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #000000;
+
+  text-transform: capitalize;
+  text-decoration: none;
+}
+
+.header-navigation a:visited {
+  color: #000000;
+}
+
+.header-navigation ul {
+  list-style-type: none;
+}
+
+.header-button {
+  display: inline-block;
+  border: none;
+  width: 44px;
+  height: 64px;
+}
+
+.search-button {
+  background: url('../images/icons/search.svg') no-repeat 50% 50%;
+}
+
+.favotites-button {
+  background: url('../images/icons/favorites.svg') no-repeat 50% 50%;
+}
+
+.favorites-count-wrapper {
+  background-color: #7DB54F;
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+
+  text-align: center;
+}
+
+.favorites-count {
+  color: #FFFFFF;
+  font-size: 10px;
+  line-height: 10px;
+}
+
+.header-brown-button {
+  width: 160px;
+  height: 36px;
+  background-color: #756157;
+  border-radius: 4px;
+
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}

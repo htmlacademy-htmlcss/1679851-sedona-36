@@ -4,6 +4,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="styles/styles.css" rel="stylesheet">
     <title>HTML Academy: Седона</title>
   </head>
 
@@ -14,31 +15,34 @@
         <span class="visually-hidden">Логотип сайта городка Седона.</span>
       </a>
 
-      <nav>
+      <nav class="header-navigation">
         <ul>
           <li>
-            <a href="#">Главная</a>
+            <a class="header-button" href="#">Главная</a>
           </li>
           <li>
-            <a href="#">О Седоне</a>
+            <a class="header-button" href="#">О&nbsp;Седоне</a>
           </li>
           <li>
-            <a href="catalog.html">Гостиницы</a>
+            <a class="header-button" href="catalog.html">Гостиницы</a>
           </li>
         </ul>
       </nav>
 
-      <p>
+      <div>
         <span class="visually-hidden">Поиск.</span>
-        <button type="button"></button>
+        <button type="button" class="header-button search-button"></button>
 
         <span class="visually-hidden">Избранное.</span>
-        <button type="button"></button><span>12</span>
+        <button type="button" class="header-button favotites-button"></button>
+        <div class="favorites-count-wrapper">
+          <span class="favorites-count">12</span>
+        </div>
 
-        <button type="button">
+        <button type="button" class="header-brown-button">
           Хочу сюда!
         </button>
-      </p>
+      </div>
     </header>
 
     <main>
