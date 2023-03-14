@@ -10,13 +10,13 @@
 
   <body>
 
-    <div class="main-wrapper">
-      <header>
+    <div class="page-wrapper">
+      <header class="page-header">
         <a href="index.html" class="sedona-logo">
           <span class="visually-hidden">Логотип сайта городка Седона.</span>
         </a>
 
-        <nav class="header-navigation-buttons">
+        <nav class="header-navigation">
           <ul>
             <li>
               <a class="header-button" href="index.html">Главная</a>
@@ -30,20 +30,18 @@
           </ul>
         </nav>
 
-        <div>
-          <span class="visually-hidden">Поиск.</span>
-          <button type="button" class="header-button search-button"></button>
-
-          <span class="visually-hidden">Избранное.</span>
-          <button type="button" class="header-button favotites-button"></button>
+        <div class="header-actions-wrapper">
+          <button type="button" class="header-button search-button"><span class="visually-hidden">Поиск.</span></button>
+          <button type="button" class="header-button favotites-button"><span
+              class="visually-hidden">Избранное.</span></button>
           <div class="favorites-count-wrapper">
             <span class="favorites-count">12</span>
           </div>
-
-          <button type="button" class="action-button brown">
-            Хочу сюда!
-          </button>
         </div>
+
+        <button type="button" class="action-button brown">
+          Хочу сюда!
+        </button>
       </header>
 
       <main>
@@ -221,28 +219,24 @@
       <footer>
         <h2 class="visually-hidden">Контакты.</h2>
         <address>
-          <div>
-            <a class="footer-button vk" href="https://vk.com/htmlacademy" class="visually-hidden">
-              <span class="visually-hidden">ВКонтакте.</span>
-            </a>
+          <a class="footer-button vk" href="https://vk.com/htmlacademy" class="visually-hidden">
+            <span class="visually-hidden">ВКонтакте.</span>
+          </a>
 
-            <a class="footer-button telegram" href="tg://resolve?domain=htmlacademy" class="visually-hidden">
-              <span class="visually-hidden">Телеграм.</span>
-            </a>
+          <a class="footer-button telegram" href="tg://resolve?domain=htmlacademy" class="visually-hidden">
+            <span class="visually-hidden">Телеграм.</span>
+          </a>
 
-            <a class="footer-button youtube" href="https://www.youtube.com/user/htmlacademyru">
-              <span class="visually-hidden">Ютюб.</span>
-            </a>
-          </div>
+          <a class="footer-button youtube" href="https://www.youtube.com/user/htmlacademyru">
+            <span class="visually-hidden">Ютюб.</span>
+          </a>
 
-          <div>
-            <a class="footer-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-          </div>
+          <a class="footer-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+
+          <a class="html-academy-logo" href="https://htmlacademy.ru/">
+            <span class="visually-hidden">Сайт HTML Academy.</span>
+          </a>
         </address>
-
-        <a class="html-academy-logo" href="https://htmlacademy.ru/">
-          <span class="visually-hidden">Сайт HTML Academy.</span>
-        </a>
       </footer>
     </div>
 
