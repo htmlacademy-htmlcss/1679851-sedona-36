@@ -46,72 +46,72 @@
 
       <main>
 
-        <section>
-          <div class="filter-block-wrapper">
+        <section class="filter-block">
+          <div class="filter-block-content-wrapper">
             <h1 class="text-style-filter-heading">Гостиницы Седоны</h1>
             <div class="breadcrumbs-wrapper">
-              <span class="breadcrumbs-home-button"></span>
-              <span class="breadcrumbs-arrow"></span>
-              <span class="breadcrumbs-hotels">Гостиницы</span>
+              <span class="breadcrumbs-home-button"></span><span class="breadcrumbs-arrow"></span><span
+                class="breadcrumbs-page">Гостиницы</span>
             </div>
             <h2 class="visually-hidden">Параметры поиска гостиниц</h2>
-            <form action="https://echo.htmlacademy.ru/" method="post">
-              <fieldset>
-                <legend class="text-style-filter-title">Инфраструктура:</legend>
-                <ul>
-                  <li>
-                    <label class="text-style-filter-lable"><input class="checkbox" type="checkbox" checked
-                        name="water_pool"> Бассейн</label>
-                  </li>
-                  <li>
-                    <label class="text-style-filter-lable"><input class="checkbox" type="checkbox" checked
-                        name="parking"> Парковка</label>
-                  </li>
-                  <li>
-                    <label class="text-style-filter-lable"><input class="checkbox" type="checkbox" name="wi_fi">
-                      Wi-Fi</label>
-                  </li>
-                </ul>
-              </fieldset>
+            <form class="filters-form-wrapper" action="https://echo.htmlacademy.ru/" method="post">
+              <div class="filter-column-wrapper">
+                <fieldset class="infrastructure-filter">
+                  <legend class="text-style-filter-title">Инфраструктура:</legend>
+                  <ul>
+                    <li>
+                      <label class="text-style-filter-lable"><input class="checkbox" type="checkbox" checked
+                          name="water_pool"> Бассейн</label>
+                    </li>
+                    <li>
+                      <label class="text-style-filter-lable"><input class="checkbox" type="checkbox" checked
+                          name="parking"> Парковка</label>
+                    </li>
+                    <li>
+                      <label class="text-style-filter-lable"><input class="checkbox" type="checkbox" name="wi_fi">
+                        Wi-Fi</label>
+                    </li>
+                  </ul>
+                </fieldset>
 
-              <fieldset>
-                <legend class="text-style-filter-title">Тип Жилья</legend>
-                <ul>
-                  <li>
-                    <label class="text-style-filter-lable"><input type="radio" name="housing_type" value="hotel"
-                        checked>Гостиница</label>
-                  </li>
-                  <li>
-                    <label class="text-style-filter-lable"><input type="radio" name="housing_type"
-                        value="motel">Мотель</label>
-                  </li>
-                  <li>
-                    <label class="text-style-filter-lable"><input type="radio" name="housing_type"
-                        value="apartment">Апартаменты</label>
-                  </li>
-                </ul>
-              </fieldset>
+                <fieldset class="housing-filter">
+                  <legend class="text-style-filter-title">Тип Жилья</legend>
+                  <ul>
+                    <li>
+                      <label class="text-style-filter-lable"><input type="radio" name="housing_type" value="hotel"
+                          checked>Гостиница</label>
+                    </li>
+                    <li>
+                      <label class="text-style-filter-lable"><input type="radio" name="housing_type"
+                          value="motel">Мотель</label>
+                    </li>
+                    <li>
+                      <label class="text-style-filter-lable"><input type="radio" name="housing_type"
+                          value="apartment">Апартаменты</label>
+                    </li>
+                  </ul>
+                </fieldset>
+              </div>
+              <div class="filter-column-wrapper">
+                <fieldset class="price-filter">
+                  <legend class="text-style-filter-title">Стоимость, ₽:</legend>
+                  <p>
+                    <label>
+                      <input class="filter-price-input from" type="number" name="price_from" value="0"> от
+                    </label>
+                    <label>
+                      <input class="filter-price-input to" type="number" name="price_to" value="9000"> до
+                    </label>
+                  </p>
 
-              <fieldset>
-                <legend class="text-style-filter-title">Стоимость, ₽:</legend>
-                <p>
-                  <label>
-                    <input class="filter-price-input from" type="number" name="price_from" value="0"> от
-                  </label>
-                  <label>
-                    <input class="filter-price-input to" type="number" name="price_to" value="9000"> до
-                  </label>
-                </p>
+                  <div class="visually-hidden">Ползунок стоимости</div>
+                </fieldset>
 
-                <div class="visually-hidden">Ползунок стоимости</div>
-                <p>
-                  <input type="number" name="price_from" value="0">
-                  <input type="number" name="price_to" value="9000">
-                </p>
-              </fieldset>
-
-              <button class="action-button blue" type="submit">Применить</button>
-              <button class="action-button transparent" type="button">Сбросить</button>
+                <div>
+                  <button class="action-button blue" type="submit">Применить</button>
+                  <button class="action-button transparent" type="button">Сбросить</button>
+                </div>
+              </div>
             </form>
           </div>
         </section>

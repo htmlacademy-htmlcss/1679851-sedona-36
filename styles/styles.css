@@ -59,6 +59,16 @@ button {
   padding: 0;
 }
 
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+fieldset {
+  padding: 0;
+  margin: 0;
+}
 
 /* Text styles */
 
@@ -417,10 +427,15 @@ address {
 
 /* Catalog page */
 /* filters */
-.filter-block-wrapper {
+.filter-block {
   background: #333333 url("../images/landscapes/mountains_3.jpg") no-repeat;
   width: 100%;
   height: 412px;
+}
+
+.filter-block-content-wrapper {
+  padding: 70px;
+  padding-top: 35px;
 }
 
 .breadcrumbs-home-button {
@@ -435,13 +450,41 @@ address {
   background: url("../images/icons/breadcrumbs_arrow.svg") no-repeat;
   width: 8px;
   height: 12px;
+  margin: 0 10px;
 }
 
-.breadcrumbs-hotels {
+.breadcrumbs-page {
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;
   color: #FFFFFF;
+}
+
+.filters-form-wrapper {
+  display: flex;
+}
+
+.filter-column-wrapper {
+  width: 550px;
+  display: flex;
+}
+
+.infrastructure-filter,
+.housing-filter {
+  width: 150px;
+}
+
+.infrastructure-filter {
+  margin-right: 70px;
+}
+
+.price-filter {
+  width: 290px;
+  margin-right: 70px;
+}
+
+.price-filter p {
+  display: flex;
 }
 
 .checkbox {
