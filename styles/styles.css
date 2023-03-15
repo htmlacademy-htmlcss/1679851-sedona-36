@@ -113,6 +113,7 @@ fieldset {
   font-weight: 700;
   font-size: 60px;
   line-height: 78px;
+  margin-bottom: 8px;
   color: #FFFFFF;
 }
 
@@ -503,6 +504,11 @@ address {
   padding-top: 35px;
 }
 
+.breadcrumbs-wrapper {
+  padding-left: 3px;
+  margin-bottom: 30px;
+}
+
 .breadcrumbs-home-button {
   display: inline-block;
   background: url("../images/icons/home.svg") no-repeat;
@@ -529,6 +535,10 @@ address {
   display: flex;
 }
 
+.filters-form-wrapper label {
+  height: 28px;
+}
+
 .filter-column-wrapper {
   width: 550px;
   display: flex;
@@ -541,6 +551,15 @@ address {
 
 .infrastructure-filter {
   margin-right: 70px;
+}
+
+legend {
+  margin-bottom: 32px;
+}
+
+.text-style-filter-lable {
+  display: inline-block;
+  margin-bottom: 17px;
 }
 
 .price-filter {
@@ -561,11 +580,21 @@ address {
 }
 
 .filter-price-input {
-  width: 143px;
+  width: 123px;
   height: 48px;
+  padding: 0;
+  padding-left: 20px;
+
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
   background: #F2F2F2;
   color: #000000;
   border: none;
+}
+
+.filter-price-input.to {
+  margin-left: 2px;
 }
 
 .filter-price-input:focus {
@@ -579,6 +608,28 @@ address {
 .filter-price-input.to {
   border-radius: 0 4px 4px 0;
 }
+
+.filter-price-caption {
+  font-size: 18px;
+  line-height: 24px;
+  color: #BEBEBE;
+  position: absolute;
+  margin: 12px 0 0 -32px;
+}
+
+.filter-buttons-wrapper {
+  padding-top: 55px;
+}
+
+.filter-buttons-wrapper button {
+  padding: 8px 50px;
+}
+
+.filter-buttons-wrapper button[type="submit"] {
+  margin-bottom: 32px;
+}
+
+/* hotels */
 
 .search-result-block {
   padding: 50px 70px 60px 70px;
@@ -631,15 +682,60 @@ address {
 .hotels-block {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
+  justify-content: space-between;
+  margin-bottom: 60px;
 }
 
 .hotel-item {
   padding: 20px;
-  margin-right: 20px;
   margin-bottom: 20px;
+
+  border: 1px solid #E6E6E6;
+  border-radius: 4px;
 }
 
 .hotels-block:nth-child(3) {
   margin-right: 0;
+}
+
+.hotel-item h3 {
+  text-transform: none;
+  margin-bottom: 16px;
+}
+
+.hotel-item p {
+  margin-bottom: 16px;
+}
+
+.hotel-item img {
+  margin-bottom: 10px;
+}
+
+.search-result-block .action-button {
+  width: 140px;
+  padding: 8px 0;
+}
+
+.hotel-item-buttons-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+#paging {
+  display: flex;
+  justify-content: flex-start;
+}
+
+#paging button {
+  width: 60px;
+  height: 60px;
+  margin-right: 8px;
+}
+
+.action-button.black {
+  color: #000000;
+}
+
+.price-text {
+  margin-left: auto;
 }
