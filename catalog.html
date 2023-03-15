@@ -31,8 +31,9 @@
         </nav>
 
         <div class="header-actions-wrapper">
-          <button type="button" class="header-button search-button"><span class="visually-hidden">Поиск.</span></button>
-          <button type="button" class="header-button favotites-button"><span
+          <button type="button" class="header-icon-button search-button"><span
+              class="visually-hidden">Поиск.</span></button>
+          <button type="button" class="header-icon-button favotites-button"><span
               class="visually-hidden">Избранное.</span></button>
           <div class="favorites-count-wrapper">
             <span class="favorites-count">12</span>
@@ -97,17 +98,19 @@
                   <legend class="text-style-filter-title">Стоимость, ₽:</legend>
                   <p>
                     <label>
-                      <input class="filter-price-input from" type="number" name="price_from" value="0"> от
+                      <input class="filter-price-input from" type="number" name="price_from" value="0">
+                      <span class="filter-price-caption">от</span>
                     </label>
                     <label>
-                      <input class="filter-price-input to" type="number" name="price_to" value="9000"> до
+                      <input class="filter-price-input to" type="number" name="price_to" value="9000">
+                      <span class="filter-price-caption">до</span>
                     </label>
                   </p>
 
                   <div class="visually-hidden">Ползунок стоимости</div>
                 </fieldset>
 
-                <div>
+                <div class="filter-buttons-wrapper">
                   <button class="action-button blue" type="submit">Применить</button>
                   <button class="action-button transparent" type="button">Сбросить</button>
                 </div>
@@ -137,8 +140,8 @@
                 <img src="images/hotels/hotel_1.jpg" alt="Вид из ущелья на звездное небо." width="300" height="212">
                 <h3 class="text-style-heading small">Amara Resort & Spa</h3>
               </a>
-              <p class="text-style-simple small">Гостиница От <b>4000 ₽</b></p>
-              <p>
+              <p class="text-style-simple small">Гостиница <span class="price-text">От <b>4000 ₽</b></span></p>
+              <p class="hotel-item-buttons-wrapper">
                 <a class="action-button brown" href="#">Подробнее</a>
                 <button class="action-button blue" type="button">В избранное</button>
               </p>
@@ -153,9 +156,9 @@
                 <h3 class="text-style-heading small">Villas at Poco Diablo</h3>
               </a>
               <p class="text-style-simple small">Гостиница От <b>5000 ₽</b></p>
-              <p>
+              <p class="hotel-item-buttons-wrapper">
                 <a class="action-button brown" href="#">Подробнее</a>
-                <button class="action-button green" type="button">В избранное</button>
+                <button class="action-button green" type="button">В избранном</button>
               </p>
               <div class="stars"></div>
               <p class="text-style-simple small uppercase">Рейтинг: 9,2</p>
@@ -168,7 +171,7 @@
                 <h3 class="text-style-heading small">Desert Quail Inn</h3>
               </a>
               <p class="text-style-simple small">Гостиница От <b>2500 ₽</b></p>
-              <p>
+              <p class="hotel-item-buttons-wrapper">
                 <a class="action-button brown" href="#">Подробнее</a>
                 <button class="action-button blue" type="button">В избранное</button>
               </p>
@@ -183,7 +186,7 @@
                 <h3 class="text-style-heading small">GreenTree Inn</h3>
               </a>
               <p class="text-style-simple small">Гостиница От <b>1500 ₽</b></p>
-              <p>
+              <p class="hotel-item-buttons-wrapper">
                 <a class="action-button brown" href="#">Подробнее</a>
                 <button class="action-button blue" type="button">В избранное</button>
               </p>
@@ -192,24 +195,27 @@
             </li>
           </ul>
 
-          <p>
-            1
+          <div id="paging">
+            <button class="action-button trunsparent black" type="button" name="page_2">1</button>
             <button class="action-button blue" type="button" name="page_2">2</button>
             <button class="action-button blue" type="button" name="page_3">3</button>
-            <button class="action-button blue" type="button" name="page_4">4</button> ...
+            <button class="action-button blue" type="button" name="page_4">4</button>
+            <button class="action-button trunsparent black" type="button" name="page_2">...</button>
             <button class="action-button blue" type="button" name="page_10">10</button>
-          </p>
+          </div>
         </section>
 
-        <section class="simple-block">
+        <section>
           <h2 class="visually-hidden">Подписка на рассылку</h2>
           <form action="https://echo.htmlacademy.ru/" method="post">
-            <div class="subscription-block-wrapper">
+            <div class="simple-text-block">
               <p class="text-style-heading">Подпишитесь на рассылку</p>
               <p class="text-style-simple">Только полезная информация и никакого спама,<br>честное бойскаутское!
               </p>
-              <input class="subscription-input" type="email" name="user_email" placeholder="Ваш e-mail" required>
-              <button class="subscription-button">Подписаться</button>
+              <div class="subscription-input-wrapper">
+                <input class="subscription-input" type="email" name="user_email" placeholder="Ваш e-mail" required>
+                <button class="subscription-button">Подписаться</button>
+              </div>
             </div>
           </form>
         </section>
