@@ -61,7 +61,8 @@ button {
 
 h1,
 h2,
-h3 {
+h3,
+p {
   margin: 0;
 }
 
@@ -141,6 +142,7 @@ fieldset {
   height: 64px;
   position: relative;
   justify-content: flex-start;
+  flex-wrap: wrap;
   padding: 0 70px;
 }
 
@@ -207,30 +209,30 @@ fieldset {
 
 .favorites-count-wrapper {
   display: inline-block;
-  vertical-align: top;
-  margin: 12px 0 0 -20px;
+  position: absolute;
+  margin: 10px 0 0 -24px;
 
   background-color: #7DB54F;
   width: 20px;
   height: 20px;
   border-radius: 10px;
-
-  text-align: center;
 }
 
 .favorites-count {
   color: #FFFFFF;
   font-size: 10px;
   line-height: 10px;
+
+  position: absolute;
+  margin: 5px 0 0 5px;
 }
 
 header .action-button {
   align-self: center;
+  margin-top: -5px;
 }
 
 .action-button {
-  display: inline-block;
-  height: 36px;
   padding: 8px 35px;
   border: none;
   border-radius: 4px;
@@ -317,15 +319,17 @@ address {
 .hero-background {
   display: flex;
   flex-direction: column;
-  background: #82B3D3 url(../images/landscapes/mountains.jpg) no-repeat;
+  background: #82B3D3 url(../images/landscapes/mountains_hero-block.jpg) no-repeat;
   width: 100%;
   height: 485px;
+  justify-content: flex-end;
 }
 
 .hero-vector-wellcome {
-  margin: 0 auto;
   width: 458px;
   height: 352px;
+  margin: 0 auto;
+  margin-bottom: 25px;
 }
 
 .hero-divider {
@@ -337,13 +341,22 @@ address {
 /* -other blocks */
 
 .simple-text-block {
-  margin: 0 auto;
   text-align: center;
   width: 700px;
+  margin: 0 auto;
+  padding: 70px 0;
 }
 
-.simple-block {
-  text-align: center;
+.simple-text-block.big-space {
+  padding: 95px 0;
+}
+
+.simple-text-block .text-style-heading {
+  margin-bottom: 25px;
+}
+
+.simple-text-block .text-style-simple {
+  margin-bottom: 20px;
 }
 
 .advantages-block {
@@ -356,19 +369,51 @@ address {
   height: 385px;
 }
 
-.advantages-image {
+.advantages-image-container {
   width: 800px;
   height: 385px;
+}
+
+.advantages-image-container img {
+  max-width: 100%;
+  height: auto;
 }
 
 .advantages-item.blue {
   background-color: #82B3D3;
 }
 
+.advantages-item.light-blue {
+  background-color: rgba(131, 179, 211, 0.2);
+  ;
+}
+
 .advantages-item-content-wrapper {
   text-align: center;
   width: 230px;
   margin: 0 auto;
+  padding: 80px 85px;
+}
+
+.advantages-item img {
+  margin-bottom: 30px;
+}
+
+.advantages-item h3 {
+  width: 175px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.advantages-item-divider {
+  width: 60px;
+  height: 2px;
+  margin: 30px auto;
+  background-color: #000000;
+}
+
+.white + .advantages-item-divider {
+  background-color: #FFFFFF;
 }
 
 .advantages-icon {
@@ -381,6 +426,8 @@ address {
   width: 375px;
   height: 52px;
   border-radius: 4px;
+  margin-top: 35px;
+  margin-bottom: 5px;
 
   color: #FFFFFF;
   font-weight: 700;
@@ -396,24 +443,29 @@ address {
 }
 
 .big-action-button.center {
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* -subscription block */
 
-.subscription-block-wrapper {
-  width: auto;
-  height: 415px;
+.subscription-background {
+  background: url("../images//landscapes/mountains_subscription_block.jpg") no-repeat;
+  width: 1200px;
+  height: 414px;
 }
 
-.subscription-block-wrapper.background {
-  background: #756157 url("../images//landscapes/mountains_2.jpg") no-repeat;
-  background-size: 100%;
+.subscription-input-wrapper {
+  display: flex;
+  margin-top: 55px;
 }
 
 .subscription-input {
   width: 452px;
   height: 50px;
+  padding-left: 20px;
+  font-size: 18px;
+  line-height: 24px;
   border: none;
   border-radius: 4px 0 0 4px;
 }
@@ -441,7 +493,7 @@ address {
 /* Catalog page */
 /* filters */
 .filter-block {
-  background: #333333 url("../images/landscapes/mountains_3.jpg") no-repeat;
+  background: #333333 url("../images/landscapes/mountains_filters-block.jpg") no-repeat;
   width: 100%;
   height: 412px;
 }
@@ -579,9 +631,15 @@ address {
 .hotels-block {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 
 .hotel-item {
   padding: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.hotels-block:nth-child(3) {
+  margin-right: 0;
 }
