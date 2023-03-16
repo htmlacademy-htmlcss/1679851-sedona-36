@@ -262,6 +262,10 @@ header .action-button {
   background-color: transparent;
 }
 
+.action-button.black-text {
+  color: #000000;
+}
+
 /* Footer */
 footer {
   height: 120px;
@@ -668,15 +672,15 @@ legend {
 }
 
 .preview-format-icon.gallery {
-  background: url("../images/icons/view_gallery.svg") no-repeat 13px 13px;
+  background: url("../images/icons/view_gallery.svg") no-repeat 13px 15px;
 }
 
 .preview-format-icon.list {
-  background: url("../images/icons/view_list.svg") no-repeat 13px 13px;
+  background: url("../images/icons/view_list.svg") no-repeat 13px 15px;
 }
 
 .preview-format-icon.icons {
-  background: url("../images/icons/view_images.svg") no-repeat 13px 13px;
+  background: url("../images/icons/view_images.svg") no-repeat 13px 15px;
 }
 
 .hotels-block {
@@ -707,6 +711,10 @@ legend {
   margin-bottom: 16px;
 }
 
+.hotel-item b {
+  font-weight: inherit;
+}
+
 .hotel-item img {
   margin-bottom: 10px;
 }
@@ -716,9 +724,15 @@ legend {
   padding: 8px 0;
 }
 
-.hotel-item-buttons-wrapper {
+.hotel-item-price-caption-wrapper {
   display: flex;
   justify-content: space-between;
+}
+
+.hotel-item-info-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 #paging {
@@ -732,10 +746,23 @@ legend {
   margin-right: 8px;
 }
 
-.action-button.black {
-  color: #000000;
+.stars {
+  width: 140px;
+  height: 37px;
 }
 
-.price-text {
-  margin-left: auto;
+.stars-4 {
+  background: url("../images/stars/stars_4.png") no-repeat;
+}
+
+.stars-3 {
+  background: url("../images/stars/stars_3.png") no-repeat;
+}
+
+.stars-2 {
+  background: url("../images/stars/stars_2.png") no-repeat;
+}
+
+.rating-caption {
+  margin-right: 22px;
 }
