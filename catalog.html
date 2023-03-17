@@ -119,16 +119,19 @@
         <section class="search-result-block">
           <header class="search-result-header">
             <h2 class="text-style-heading">Найдено гостиниц: <span>38</span></h2>
-            <select name="sort_type" aria-label="Сортировка">
-              <option class="text-style-filter-lable gray" value="cheap" selected>Сначала дешевые</option>
-              <option class="text-style-filter-lable gray" value="popular">По популярности</option>
-            </select>
+            <div class="sort-type-select-wrapper">
+              <select name="sort_type" aria-label="Сортировка">
+                <option class="text-style-filter-lable gray" value="cheap" selected>Сначала дешевые</option>
+                <option class="text-style-filter-lable gray" value="popular">По популярности</option>
+              </select>
+            </div>
             <button class="preview-format-icon active icons" type="button" name="show_icons"><span
                 class="visually-hidden">Отобразить в формате иконок</span></button>
             <button class="preview-format-icon gallery" type="button" name="show_gallery"><span
                 class="visually-hidden">Отобразить в формате галереи</span></button>
             <button class="preview-format-icon list" type="button" name="show_list"><span
-                class="visually-hidden">Отобразить в формате списка</span></button>
+                class="visually-hidden">Отобразить в
+                формате списка</span></button>
           </header>
 
           <ul class="hotels-block">
