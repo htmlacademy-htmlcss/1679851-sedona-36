@@ -212,27 +212,24 @@ fieldset {
 }
 
 .favotites-button {
+  position: relative;
   background: url('../images/icons/favorites.svg') no-repeat 50% 50%;
 }
 
-.favorites-count-wrapper {
-  display: inline-block;
+.favotites-button::after {
+  content: "12";
   position: absolute;
-  margin: 10px 0 0 -24px;
+  top: 10px;
+  left: 20px;
+
+  color: #FFFFFF;
+  font-size: 10px;
+  line-height: 21px;
 
   background-color: #7DB54F;
   width: 20px;
   height: 20px;
   border-radius: 10px;
-}
-
-.favorites-count {
-  color: #FFFFFF;
-  font-size: 10px;
-  line-height: 10px;
-
-  position: absolute;
-  margin: 5px 0 0 5px;
 }
 
 header .action-button {
@@ -757,10 +754,11 @@ legend {
   justify-content: flex-start;
 }
 
-#paging button {
+#paging .action-button {
   width: 60px;
   height: 60px;
   margin-right: 8px;
+  padding: 0;
 }
 
 .stars-4 {
