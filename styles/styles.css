@@ -264,7 +264,7 @@ header .action-button {
 
 .action-button.big-button {
   padding: 16px 50px;
-  margin-top: 15px;
+  margin-top: 30px;
   margin-bottom: 5px;
   font-size: 20px;
   display: inline-block;
@@ -333,7 +333,7 @@ header .action-button {
 
 /* Transparent buttons color-styles */
 .action-button.transparent {
-  background-color: transparent;
+  background-color: #F2F2F2;
 }
 
 .action-button.transparent:focus {
@@ -452,6 +452,10 @@ header .action-button {
   padding: 95px 0;
 }
 
+.simple-text-block.min-space {
+  padding: 70px 0 30px 0;
+}
+
 .simple-text-block .text-style-heading {
   margin-bottom: 25px;
 }
@@ -486,14 +490,25 @@ header .action-button {
 
 .advantages-item.light-blue {
   background-color: rgba(131, 179, 211, 0.2);
-  ;
+}
+
+.advantages-item.very-light-blue {
+  background-color: rgba(131, 179, 211, 0.12)
 }
 
 .advantages-item-content-wrapper {
   text-align: center;
   width: 230px;
   margin: 0 auto;
-  padding: 80px 85px;
+  padding: 112px 85px;
+}
+
+.advantages-item-content-wrapper.min-space {
+  padding: 81px 85px;
+}
+
+.advantages-item.blue .advantages-item-content-wrapper {
+  padding: 102px 85px;
 }
 
 .advantages-item img {
@@ -543,6 +558,7 @@ header .action-button {
   line-height: 24px;
   border: none;
   border-radius: 4px 0 0 4px;
+  background-color: #F2F2F2;
 }
 
 .subscription-input:focus {
