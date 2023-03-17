@@ -53,33 +53,30 @@ body {
   overflow: hidden;
 }
 
-fieldset {
+.fieldset {
   border: none;
+  padding: 0;
+  margin: 0;
 }
 
-ul {
+.unordered-list {
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
 
-a {
+.anchor-link {
   text-decoration: none;
 }
 
-button {
+.button-tag {
   padding: 0;
 }
 
-h1,
-h2,
-h3,
-p {
-  margin: 0;
-}
-
-fieldset {
-  padding: 0;
+.h1-tag,
+.h2-tag,
+.h3-tag,
+.paragraph {
   margin: 0;
 }
 
@@ -361,7 +358,7 @@ header .action-button {
 }
 
 /* Footer */
-footer {
+.footer {
   height: 120px;
   padding: 40px 70px 0 70px;
 }
@@ -391,7 +388,7 @@ footer {
   background: url("../images/icons/youtube.svg") no-repeat 10px 10px;
 }
 
-address {
+.address {
   display: flex;
   font-style: normal;
 }

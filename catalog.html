@@ -18,27 +18,27 @@
         </a>
 
         <nav class="header-navigation">
-          <ul>
+          <ul class="unordered-list">
             <li>
-              <a class="header-button" href="index.html">Главная</a>
+              <a class="anchor-link header-button" href="index.html">Главная</a>
             </li>
             <li>
-              <a class="header-button" href=" #">О&nbsp;Седоне</a>
+              <a class="anchor-link header-button" href=" #">О&nbsp;Седоне</a>
             </li>
             <li>
-              <a class="header-button current" href=" #">Гостиницы</a>
+              <a class="anchor-link header-button current" href=" #">Гостиницы</a>
             </li>
           </ul>
         </nav>
 
         <div class="header-actions-wrapper">
-          <button type="button" class="header-icon-button search-button"><span
+          <button type="button" class="button-tag header-icon-button search-button"><span
               class="visually-hidden">Поиск.</span></button>
-          <button type="button" class="header-icon-button favotites-button"><span
+          <button type="button" class="button-tag header-icon-button favotites-button"><span
               class="visually-hidden">Избранное.</span></button>
         </div>
 
-        <button type="button" class="action-button brown">
+        <button type="button" class="button-tag action-button brown">
           Хочу сюда!
         </button>
       </header>
@@ -47,17 +47,17 @@
 
         <section class="filter-block">
           <div class="filter-block-content-wrapper">
-            <h1 class="text-style-filter-heading">Гостиницы Седоны</h1>
+            <h1 class="h1-tag text-style-filter-heading">Гостиницы Седоны</h1>
             <div class="breadcrumbs-wrapper">
               <span class="breadcrumbs-home-button"></span><span class="breadcrumbs-arrow"></span><span
                 class="breadcrumbs-page">Гостиницы</span>
             </div>
-            <h2 class="visually-hidden">Параметры поиска гостиниц</h2>
+            <h2 class="h2-tag visually-hidden">Параметры поиска гостиниц</h2>
             <form class="filters-form-wrapper" action="https://echo.htmlacademy.ru/" method="post">
               <div class="filter-column-wrapper">
-                <fieldset class="infrastructure-filter">
+                <fieldset class="infrastructure-filter fieldset">
                   <legend class="text-style-filter-title">Инфраструктура:</legend>
-                  <ul>
+                  <ul class="unordered-list">
                     <li>
                       <label class="text-style-filter-lable checkbox checked"><input class="visually-hidden"
                           type="checkbox" checked name="water_pool">Бассейн</label>
@@ -73,9 +73,9 @@
                   </ul>
                 </fieldset>
 
-                <fieldset class="housing-filter">
+                <fieldset class="housing-filter fieldset">
                   <legend class="text-style-filter-title">Тип Жилья</legend>
-                  <ul>
+                  <ul class="unordered-list">
                     <li>
                       <label class="text-style-filter-lable radio checked"><input class="visually-hidden" type="radio"
                           name="housing_type" value="hotel" checked>Гостиница</label>
@@ -92,9 +92,9 @@
                 </fieldset>
               </div>
               <div class="filter-column-wrapper">
-                <fieldset class="price-filter">
+                <fieldset class="price-filter fieldset">
                   <legend class="text-style-filter-title">Стоимость, ₽:</legend>
-                  <p>
+                  <p class="paragraph">
                     <label>
                       <input class="filter-price-input from" type="number" name="price_from" value="0">
                       <span class="filter-price-caption">от</span>
@@ -109,8 +109,8 @@
                 </fieldset>
 
                 <div class="filter-buttons-wrapper">
-                  <button class="action-button blue" type="submit">Применить</button>
-                  <button class="action-button transparent" type="button">Сбросить</button>
+                  <button class="button-tag action-button blue" type="submit">Применить</button>
+                  <button class="button-tag action-button transparent" type="button">Сбросить</button>
                 </div>
               </div>
             </form>
@@ -119,81 +119,81 @@
 
         <section class="search-result-block">
           <header class="search-result-header">
-            <h2 class="text-style-heading">Найдено гостиниц: <span>38</span></h2>
+            <h2 class="h2-tag text-style-heading">Найдено гостиниц: <span>38</span></h2>
             <div class="sort-type-select-wrapper">
               <select name="sort_type" aria-label="Сортировка">
                 <option class="text-style-filter-lable gray" value="cheap" selected>Сначала дешевые</option>
                 <option class="text-style-filter-lable gray" value="popular">По популярности</option>
               </select>
             </div>
-            <button class="preview-format-icon current icons" type="button" name="show_icons"><span
+            <button class="button-tag preview-format-icon current icons" type="button" name="show_icons"><span
                 class="visually-hidden">Отобразить в формате иконок</span></button>
-            <button class="preview-format-icon gallery" type="button" name="show_gallery"><span
+            <button class="button-tag preview-format-icon gallery" type="button" name="show_gallery"><span
                 class="visually-hidden">Отобразить в формате галереи</span></button>
-            <button class="preview-format-icon list" type="button" name="show_list"><span
+            <button class="button-tag preview-format-icon list" type="button" name="show_list"><span
                 class="visually-hidden">Отобразить в
                 формате списка</span></button>
           </header>
 
-          <ul class="hotels-block">
+          <ul class="hotels-block unordered-list">
             <li class="hotel-item">
-              <a href="#">
+              <a class="anchor-link" href="#">
                 <img src="images/hotels/hotel_1.jpg" alt="Вид из ущелья на звездное небо." width="300" height="212">
-                <h3 class="text-style-heading small">Amara Resort & Spa</h3>
+                <h3 class="h3-tag text-style-heading small">Amara Resort & Spa</h3>
               </a>
               <div class="hotel-item-info-wrapper">
                 <span class="text-style-simple small">Гостиница</span>
                 <span class="text-style-simple small price-caption">От <b>4000 ₽</b></span>
-                <a class="action-button brown" href="#">Подробнее</a>
-                <button class="action-button blue" type="button">В избранное</button>
+                <a class="anchor-link action-button brown" href="#">Подробнее</a>
+                <button class="button-tag action-button blue" type="button">В избранное</button>
                 <span class="stars stars-4"></span>
                 <span class="text-style-simple small uppercase rating-caption">Рейтинг: 8,5</span>
               </div>
             </li>
 
             <li class="hotel-item">
-              <a href="#">
+              <a class="anchor-link" href="#">
                 <img src="images/hotels/hotel_2.jpg"
                   alt="Радуа опускается в скалистые горы на горизонте на фоне темного неба." width="300" height="212">
-                <h3 class="text-style-heading small">Villas at Poco Diablo</h3>
+                <h3 class="h3-tag text-style-heading small">Villas at Poco Diablo</h3>
               </a>
               <div class="hotel-item-info-wrapper">
                 <span class="text-style-simple small">Гостиница</span>
                 <span class="text-style-simple small price-caption">От <b>5000 ₽</b></span>
-                <a class="action-button brown" href="#">Подробнее</a>
-                <button class="action-button green" type="button">В избранном</button>
+                <a class="anchor-link action-button brown" href="#">Подробнее</a>
+                <button class="button-tag action-button green" type="button">В избранном</button>
                 <span class="stars stars-4"></span>
                 <span class="text-style-simple small uppercase rating-caption">Рейтинг: 9,2</span>
               </div>
             </li>
 
             <li class="hotel-item">
-              <a href="#">
+              <a class="anchor-link" href="#">
                 <img src="images/hotels/hotel_3.jpg"
                   alt="Скалистая гора поросшая деревьями и кустами на фоне ясного неба." width="300" height="212">
-                <h3 class="text-style-heading small">Desert Quail Inn</h3>
+                <h3 class="h3-tag text-style-heading small">Desert Quail Inn</h3>
               </a>
               <div class="hotel-item-info-wrapper">
                 <span class="text-style-simple small">Гостиница</span>
                 <span class="text-style-simple small price-caption">От <b>2500 ₽</b></span>
-                <a class="action-button brown" href="#">Подробнее</a>
-                <button class="action-button blue" type="button">В избранное</button>
+                <a class="anchor-link action-button brown" href="#">Подробнее</a>
+                <button class="button-tag action-button blue" type="button">В избранное</button>
                 <span class="stars stars-3"></span>
                 <span class="text-style-simple small uppercase rating-caption">Рейтинг: 6,9</span>
               </div>
             </li>
 
             <li class="hotel-item">
-              <a href="#">
+              <a class="anchor-link" href="#">
                 <img src="images/hotels/hotel_4.jpg"
                   alt="Красный выступ скалы озаряемый закатом на фоне звездного неба." width="300" height="212">
-                <h3 class="text-style-heading small">GreenTree Inn</h3>
+                <h3 class="h3-tag text-style-heading small">GreenTree Inn</h3>
               </a>
               <div class="hotel-item-info-wrapper">
                 <span class="text-style-simple small">Гостиница</span>
                 <span class="text-style-simple small price-caption">От <b>1500 ₽</b></span>
-                <a class="action-button brown" href="#">Подробнее</a>
-                <button class="action-button blue" type="button">В избранное</button>
+                <a class="anchor-link action-button brown" href="#">Подробнее</a>
+                <button class="button-tag action-button blue" type="button">В избранное</button>
                 <span class="stars stars-2"></span>
                 <span class="text-style-simple small uppercase rating-caption">Рейтинг: 5,0</span>
               </div>
@@ -201,25 +201,26 @@
           </ul>
 
           <div id="paging">
-            <button class="action-button transparent black-text" type="button" name="page_2">1</button>
-            <button class="action-button blue" type="button" name="page_2">2</button>
-            <button class="action-button blue" type="button" name="page_3">3</button>
-            <button class="action-button blue" type="button" name="page_4">4</button>
-            <button class="action-button transparent black-text" type="button" name="page_2">...</button>
-            <button class="action-button blue" type="button" name="page_10">10</button>
+            <button class="button-tag action-button transparent black-text" type="button" name="page_2">1</button>
+            <button class="button-tag action-button blue" type="button" name="page_2">2</button>
+            <button class="button-tag action-button blue" type="button" name="page_3">3</button>
+            <button class="button-tag action-button blue" type="button" name="page_4">4</button>
+            <button class="button-tag action-button transparent black-text" type="button" name="page_2">...</button>
+            <button class="button-tag action-button blue" type="button" name="page_10">10</button>
           </div>
         </section>
 
         <section>
-          <h2 class="visually-hidden">Подписка на рассылку</h2>
+          <h2 class="h2-tag visually-hidden">Подписка на рассылку</h2>
           <form action="https://echo.htmlacademy.ru/" method="post">
             <div class="simple-text-block">
-              <p class="text-style-heading">Подпишитесь на рассылку</p>
-              <p class="text-style-simple">Только полезная информация и никакого спама,<br>честное бойскаутское!
+              <p class="paragraph text-style-heading">Подпишитесь на рассылку</p>
+              <p class="paragraph text-style-simple">Только полезная информация и никакого спама,<br>честное
+                бойскаутское!
               </p>
               <div class="subscription-input-wrapper">
                 <input class="subscription-input" type="email" name="user_email" placeholder="Ваш e-mail" required>
-                <button class="subscription-button">Подписаться</button>
+                <button class="button-tag subscription-button">Подписаться</button>
               </div>
             </div>
           </form>
@@ -227,24 +228,24 @@
 
       </main>
 
-      <footer>
-        <h2 class="visually-hidden">Контакты.</h2>
-        <address>
-          <a class="footer-button vk" href="https://vk.com/htmlacademy">
+      <footer class="footer">
+        <h2 class="h2-tag visually-hidden">Контакты.</h2>
+        <address class="address">
+          <a class="anchor-link footer-button vk" href="https://vk.com/htmlacademy">
             <span class="visually-hidden">ВКонтакте.</span>
           </a>
 
-          <a class="footer-button telegram" href="tg://resolve?domain=htmlacademy">
+          <a class="anchor-link footer-button telegram" href="tg://resolve?domain=htmlacademy">
             <span class="visually-hidden">Телеграм.</span>
           </a>
 
-          <a class="footer-button youtube" href="https://www.youtube.com/user/htmlacademyru">
+          <a class="anchor-link footer-button youtube" href="https://www.youtube.com/user/htmlacademyru">
             <span class="visually-hidden">Ютюб.</span>
           </a>
 
-          <a class="footer-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+          <a class="anchor-link footer-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
 
-          <a class="html-academy-logo" href="https://htmlacademy.ru/">
+          <a class="anchor-link html-academy-logo" href="https://htmlacademy.ru/">
             <span class="visually-hidden">Сайт HTML Academy.</span>
           </a>
         </address>
