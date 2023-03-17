@@ -356,6 +356,11 @@ footer {
   cursor: pointer;
 }
 
+.footer-button a:hover,
+.footer-button a:focus {
+  fill: black;
+}
+
 .footer-button.vk {
   background: url("../images/icons/vk.svg") no-repeat 10px 10px;
 }
@@ -526,7 +531,7 @@ address {
 }
 
 .subscription-input:focus {
-  outline: none;
+  outline: 3px solid #83B3D3;
 }
 
 .subscription-button {
@@ -569,6 +574,7 @@ address {
   background: url("../images/icons/home.svg") no-repeat;
   width: 12px;
   height: 12px;
+  cursor: pointer;
 }
 
 .breadcrumbs-arrow {
@@ -584,6 +590,7 @@ address {
   font-size: 16px;
   line-height: 21px;
   color: #FFFFFF;
+  cursor: pointer;
 }
 
 .filters-form-wrapper {
@@ -592,6 +599,7 @@ address {
 
 .filters-form-wrapper label {
   height: 28px;
+  cursor: pointer;
 }
 
 .filter-column-wrapper {
@@ -615,6 +623,54 @@ legend {
 .text-style-filter-lable {
   display: inline-block;
   margin-bottom: 17px;
+  padding-left: 35px;
+}
+
+.checkbox::before {
+  position: absolute;
+  content: "";
+  display: inline-block;
+  margin: 2px 0 0 -35px;
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  background: #FFFFFF;
+}
+
+.checked.checkbox::before {
+  background: #FFFFFF url("../images/icons/check.svg") no-repeat 4px 5px;
+}
+
+.checkbox:hover,
+.radio:hover,
+.footer-button:hover,
+.html-academy-logo:hover,
+.breadcrumbs-page:hover,
+.breadcrumbs-home-button:hover {
+  color: #FFFFFF;
+  opacity: 0.7;
+}
+
+.footer-phone:hover,
+.header-icon-button:hover,
+.header-button:hover {
+  color: #000000;
+  opacity: 0.7;
+}
+
+.radio::before {
+  position: absolute;
+  content: "";
+  display: inline-block;
+  margin: 2px 0 0 -35px;
+  width: 21px;
+  height: 21px;
+  border-radius: 10px;
+  background: #FFFFFF;
+}
+
+.checked.radio::before {
+  background: #FFFFFF url("../images/icons/circle.svg") no-repeat 5px 5px;
 }
 
 .price-filter {
@@ -624,14 +680,6 @@ legend {
 
 .price-filter p {
   display: flex;
-}
-
-.checkbox {
-  display: inline-block;
-  background: #FFFFFF url("../images/icons/check.svg") no-repeat;
-  width: 20px;
-  height: 20px;
-  border-radius: 3px;
 }
 
 .filter-price-input {
@@ -648,12 +696,19 @@ legend {
   border: none;
 }
 
+.filter-price-input::-webkit-outer-spin-button,
+.filter-price-input::-webkit-inner-spin-button {
+  /* display: none; <- Crashes Chrome on hover */
+  -webkit-appearance: none;
+  /* <-- Apparently some margin are still there even though it's hidden */
+}
+
 .filter-price-input.to {
   margin-left: 2px;
 }
 
 .filter-price-input:focus {
-  outline: none;
+  outline: 3px solid #68A2CA;
 }
 
 .filter-price-input.from {
@@ -686,6 +741,13 @@ legend {
 
 .filter-buttons-wrapper button[type="submit"] {
   margin-bottom: 32px;
+}
+
+.price-slider {
+  width: 287px;
+  height: 20px;
+  margin-top: 57px;
+  background: url("../images/slider.png") no-repeat;
 }
 
 /* hotels */
@@ -751,8 +813,14 @@ legend {
   margin-right: 0;
 }
 
-.preview-format-icon.active {
+.preview-format-icon:hover,
+.preview-format-icon:active,
+.preview-format-icon.current {
   border: 2px solid #000000;
+}
+
+.preview-format-icon:focus {
+  outline: 3px solid #83B3D3;
 }
 
 .preview-format-icon.gallery {
@@ -764,7 +832,7 @@ legend {
 }
 
 .preview-format-icon.icons {
-  background: url("../images/icons/view_images.svg") no-repeat 13px 15px;
+  background: url("../images/icons/view_images.svg") no-repeat 14px 15px;
 }
 
 .hotels-block {
