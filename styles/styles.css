@@ -38,7 +38,14 @@ body {
 }
 
 .visually-hidden {
-  display: none;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 fieldset {
@@ -693,12 +700,18 @@ legend {
 .hotel-item {
   padding: 20px;
   margin-bottom: 20px;
-
+  width: 300px;
   border: 1px solid #E6E6E6;
   border-radius: 4px;
 }
 
-.hotels-block:nth-child(3) {
+.hotel-item-content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.hotels-block:nth-child(3n) {
   margin-right: 0;
 }
 
@@ -719,7 +732,7 @@ legend {
   margin-bottom: 10px;
 }
 
-.search-result-block .action-button {
+.hotel-item .action-button {
   width: 140px;
   padding: 8px 0;
 }
