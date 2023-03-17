@@ -250,21 +250,92 @@ header .action-button {
   text-transform: uppercase;
 }
 
-.action-button.brown {
-  background-color: #756157;
+.action-button.big-button {
+  padding: 16px 50px;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  font-size: 20px;
+  display: inline-block;
 }
 
-.action-button.green {
-  background-color: #7DB54F;
-}
-
+/* Blue buttons color-styles */
 .action-button.blue {
   background-color: #82B3D3;
 }
 
+.subscription-button:hover,
+.action-button.blue:hover {
+  background-color: #68A2CA;
+}
+
+.subscription-button:active,
+.action-button.blue:active,
+.subscription-button:focus,
+.action-button.blue:focus {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #68A2CA;
+}
+
+.subscription-button:disabled,
+.action-button.blue:disabled {
+  background-color: #E5E5E5;
+}
+
+/* Brown buttons color-styles */
+.action-button.brown {
+  background-color: #756157;
+}
+
+.action-button.brown:hover,
+.action-button.brown:focus {
+  background-color: #615048;
+}
+
+.action-button.brown:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #756157;
+}
+
+.action-button.brown:disabled {
+  background-color: #E5E5E5;
+}
+
+/* Green buttons color-styles */
+.action-button.green {
+  background-color: #7DB54F;
+}
+
+.action-button.green:hover,
+.action-button.green:focus {
+  background-color: #6C9E42;
+}
+
+.action-button.green:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #7DB54F;
+}
+
+.action-button.green:disabled {
+  background-color: #E5E5E5;
+}
+
+/* Transparent buttons color-styles */
 .action-button.transparent {
   background-color: transparent;
 }
+
+.action-button.transparent:focus {
+  outline: 3px solid #83B3D3;
+}
+
+.action-button.transparent:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.action-button.transparent:disabled {
+  color: rgba(255, 255, 255, 0.1);
+}
+
 
 .action-button.black-text {
   color: #000000;
@@ -418,42 +489,16 @@ address {
   width: 60px;
   height: 2px;
   margin: 30px auto;
-  background-color: #000000;
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .white + .advantages-item-divider {
-  background-color: #FFFFFF;
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
 .advantages-icon {
   width: 75px;
   height: 72px;
-}
-
-.big-action-button {
-  display: block;
-  width: 375px;
-  height: 52px;
-  border-radius: 4px;
-  margin-top: 35px;
-  margin-bottom: 5px;
-
-  color: #FFFFFF;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 50px;
-  text-align: center;
-  text-transform: uppercase;
-  text-decoration: none;
-}
-
-.big-action-button.brown {
-  background-color: #756157;
-}
-
-.big-action-button.center {
-  margin-left: auto;
-  margin-right: auto;
 }
 
 /* -subscription block */
@@ -490,6 +535,7 @@ address {
   border: none;
   border-radius: 0 4px 4px 0;
   text-align: center;
+  cursor: pointer;
 
   font-size: 20px;
   line-height: 36px;
@@ -631,6 +677,10 @@ legend {
 
 .filter-buttons-wrapper button {
   padding: 8px 50px;
+}
+
+.filter-buttons-wrapper button[type="button"] {
+  margin-left: 5px;
 }
 
 .filter-buttons-wrapper button[type="submit"] {
