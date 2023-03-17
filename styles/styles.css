@@ -16,6 +16,10 @@
   font-display: swap;
 }
 
+html {
+  min-width: 1024px;
+}
+
 body {
   margin: 0;
 
@@ -23,6 +27,7 @@ body {
   font-size: 18px;
   font-weight: 400;
   line-height: 21px;
+  min-width: 1024px;
   color: #333333;
 }
 
@@ -48,34 +53,39 @@ body {
   overflow: hidden;
 }
 
-fieldset {
+.fieldset {
   border: none;
+  padding: 0;
+  margin: 0;
 }
 
-ul {
+.unordered-list {
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
 
-a {
+.anchor-link {
   text-decoration: none;
 }
 
-button {
+.button-tag {
   padding: 0;
 }
 
-h1,
-h2,
-h3,
-p {
+.h1-tag,
+.h2-tag,
+.h3-tag,
+.paragraph {
   margin: 0;
 }
 
-fieldset {
-  padding: 0;
-  margin: 0;
+.filter-price-input::-webkit-outer-spin-button,
+.filter-price-input::-webkit-inner-spin-button,
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-calendar-picker-indicator {
+  display: none;
+  -webkit-appearance: none;
 }
 
 /* Text styles */
@@ -223,6 +233,7 @@ fieldset {
   left: 20px;
 
   color: #FFFFFF;
+  font-family: "PT Sans", sans-serif;
   font-size: 10px;
   line-height: 21px;
 
@@ -253,7 +264,7 @@ header .action-button {
 
 .action-button.big-button {
   padding: 16px 50px;
-  margin-top: 15px;
+  margin-top: 30px;
   margin-bottom: 5px;
   font-size: 20px;
   display: inline-block;
@@ -322,7 +333,7 @@ header .action-button {
 
 /* Transparent buttons color-styles */
 .action-button.transparent {
-  background-color: transparent;
+  background-color: #F2F2F2;
 }
 
 .action-button.transparent:focus {
@@ -342,8 +353,12 @@ header .action-button {
   color: #000000;
 }
 
+.black-text {
+  color: #000000;
+}
+
 /* Footer */
-footer {
+.footer {
   height: 120px;
   padding: 40px 70px 0 70px;
 }
@@ -373,7 +388,7 @@ footer {
   background: url("../images/icons/youtube.svg") no-repeat 10px 10px;
 }
 
-address {
+.address {
   display: flex;
   font-style: normal;
 }
@@ -437,6 +452,10 @@ address {
   padding: 95px 0;
 }
 
+.simple-text-block.min-space {
+  padding: 70px 0 30px 0;
+}
+
 .simple-text-block .text-style-heading {
   margin-bottom: 25px;
 }
@@ -471,14 +490,25 @@ address {
 
 .advantages-item.light-blue {
   background-color: rgba(131, 179, 211, 0.2);
-  ;
+}
+
+.advantages-item.very-light-blue {
+  background-color: rgba(131, 179, 211, 0.12)
 }
 
 .advantages-item-content-wrapper {
   text-align: center;
   width: 230px;
   margin: 0 auto;
-  padding: 80px 85px;
+  padding: 112px 85px;
+}
+
+.advantages-item-content-wrapper.min-space {
+  padding: 81px 85px;
+}
+
+.advantages-item.blue .advantages-item-content-wrapper {
+  padding: 102px 85px;
 }
 
 .advantages-item img {
@@ -528,6 +558,7 @@ address {
   line-height: 24px;
   border: none;
   border-radius: 4px 0 0 4px;
+  background-color: #F2F2F2;
 }
 
 .subscription-input:focus {
@@ -653,7 +684,9 @@ legend {
 
 .footer-phone:hover,
 .header-icon-button:hover,
-.header-button:hover {
+.header-button:hover,
+.person-count-button:hover,
+.modal-window-close-button:hover {
   color: #000000;
   opacity: 0.7;
 }
@@ -694,13 +727,6 @@ legend {
   background: #F2F2F2;
   color: #000000;
   border: none;
-}
-
-.filter-price-input::-webkit-outer-spin-button,
-.filter-price-input::-webkit-inner-spin-button {
-  /* display: none; <- Crashes Chrome on hover */
-  -webkit-appearance: none;
-  /* <-- Apparently some margin are still there even though it's hidden */
 }
 
 .filter-price-input.to {
@@ -921,4 +947,163 @@ legend {
 
 .stars-2 {
   background: url("../images/stars/stars_2.png") no-repeat;
+}
+
+/* Модалка */
+.modal-window-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #F2F2F2;
+  opacity: 0.8;
+}
+
+.modal-window {
+  position: fixed;
+  left: 21.95%;
+  right: 22.03%;
+  top: 11.17%;
+  width: 577px;
+
+  padding: 64px 70px;
+
+  background: #FFFFFF;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+  border-radius: 30px;
+}
+
+.modal-window-close-button {
+  width: 14px;
+  height: 14px;
+  background: url("../images/close_button.svg") no-repeat;
+  position: absolute;
+  top: 92px;
+  left: 633px;
+  cursor: pointer;
+}
+
+.modal-window-content-wrapper {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 137px 440px;
+  grid-template-rows: 58px 48px 48px 48px 60px;
+  row-gap: 42px;
+}
+
+.modal-window-input-caption {
+  align-self: center;
+}
+
+.modal-window-content-wrapper h2,
+.modal-window-content-wrapper button {
+  grid-column: span 2;
+}
+
+.modal-window-content-wrapper input {
+  height: 48px;
+  padding-left: 20px;
+
+  background: #F2F2F2;
+  border: none;
+  border-radius: 4px;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.modal-window-content-wrapper input:focus {
+  outline: 3px solid #83B3D3;
+}
+
+.modal-window-content-wrapper input::before {
+  position: absolute;
+  content: "";
+  margin-left: 383px;
+  width: 16px;
+  height: 15px;
+  background: url("../images/calendar.svg") no-repeat;
+  opacity: 0.3;
+  cursor: pointer;
+}
+
+.modal-window-content-wrapper input.error::after {
+  content: "Мы не можем отправить вас в прошлое.";
+  position: absolute;
+  margin-top: 65px;
+
+  font-family: "PT Sans", sans-serif;
+  color: #FF5757;
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 400;
+}
+
+.modal-window-content-wrapper input.info::after {
+  content: "На эти даты есть свободные номера. Пока есть.";
+  position: absolute;
+  margin-top: 65px;
+
+  font-family: "PT Sans", sans-serif;
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #333333;
+}
+
+.modal-window-person-count-wrapper {
+  grid-column: span 2;
+  display: grid;
+  grid-template-columns: 245px 245px;
+  gap: 90px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.person-count-button {
+  width: 40px;
+  height: 48px;
+  cursor: pointer;
+}
+
+.person-count {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.person-count-button:hover {
+  color: #000000;
+  opacity: 0.7;
+}
+
+.minus {
+  background: url("../images/minus.svg") 11px 13px no-repeat;
+}
+
+.plus {
+  background: url("../images/plus.svg") 8px 13px no-repeat;
+}
+
+.modal-window-input-caption.children::after {
+  content: "";
+  position: absolute;
+  margin: 3px 0 0 10px;
+
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  background: #83B3D3 url("../images/info.svg") 9px 4px no-repeat;
+  cursor: pointer;
+}
+
+.count-input-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.count-control-wrapper {
+  display: flex;
+  justify-content: space-between;
 }
