@@ -157,7 +157,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 .page-header {
   display: flex;
-  height: 64px;
+  min-height: 64px;
   position: relative;
   justify-content: flex-start;
   flex-wrap: wrap;
@@ -165,15 +165,23 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 .sedona-logo {
-  display: inline-block;
   background: url("../images/logo.png") no-repeat;
   width: 140px;
   height: 70px;
+  position: relative;
   margin-right: 30px;
+  margin-top: -4px;
+  top: 4px;
+}
+
+.sedona-logo:hover {
+  background: url("../images/logo_hovered.svg") no-repeat;
 }
 
 .header-navigation ul {
   display: flex;
+  flex-wrap: wrap;
+  max-width: 580px;
 }
 
 .header-navigation li {
@@ -244,8 +252,8 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 header .action-button {
-  align-self: center;
-  margin-top: -5px;
+  align-self: flex-start;
+  margin-top: 15px;
 }
 
 .action-button {
@@ -331,20 +339,28 @@ header .action-button {
   background-color: #E5E5E5;
 }
 
-/* Transparent buttons color-styles */
-.action-button.transparent {
+/* Light-gray buttons color-styles */
+.action-button.light-gray {
   background-color: #F2F2F2;
 }
 
-.action-button.transparent:focus {
+/* Transparent buttons color-styles */
+.action-button.transparent {
+  background-color: transparent;
+}
+
+.action-button.transparent:focus,
+.action-button.light-gray:focus {
   outline: 3px solid #83B3D3;
 }
 
-.action-button.transparent:active {
+.action-button.transparent:active,
+.action-button.light-gray:active {
   color: rgba(255, 255, 255, 0.3);
 }
 
-.action-button.transparent:disabled {
+.action-button.transparent:disabled,
+.action-button.light-gray:disabled {
   color: rgba(255, 255, 255, 0.1);
 }
 
@@ -369,11 +385,6 @@ header .action-button {
   width: 45px;
   height: 35px;
   cursor: pointer;
-}
-
-.footer-button a:hover,
-.footer-button a:focus {
-  fill: black;
 }
 
 .footer-button.vk {
@@ -798,6 +809,7 @@ header .action-button {
   border: 2px solid #E5E5E5;
   border-radius: 4px;
   padding-left: 20px;
+  background: transparent;
 
   -moz-appearance: none;
   -webkit-appearance: none;
