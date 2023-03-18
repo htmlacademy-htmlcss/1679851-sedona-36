@@ -5,14 +5,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="styles/styles.css" rel="stylesheet">
-    <link rel="shortcut icon" type="image/x-icon" href="./images/favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">
     <title>HTML Academy: Седона</title>
   </head>
 
   <body>
 
     <div class="page-wrapper">
-      <header class="page-header">
+      <header data-test="header" class="page-header">
         <a href="index.html" class="sedona-logo">
           <span class="visually-hidden">Логотип сайта городка Седона.</span>
         </a>
@@ -43,9 +43,9 @@
         </button>
       </header>
 
-      <main>
+      <main data-test="main">
 
-        <section class="filter-block">
+        <section data-test="filter" class="filter-block">
           <div class="filter-block-content-wrapper">
             <h1 class="h1-tag text-style-filter-heading">Гостиницы Седоны</h1>
             <div class="breadcrumbs-wrapper">
@@ -56,7 +56,7 @@
             <form class="filters-form-wrapper" action="https://echo.htmlacademy.ru/" method="post">
               <div class="filter-column-wrapper">
                 <fieldset class="infrastructure-filter fieldset">
-                  <legend class="text-style-filter-title">Инфраструктура:</legend>
+                  <legend class="legend text-style-filter-title">Инфраструктура:</legend>
                   <ul class="unordered-list">
                     <li>
                       <label class="text-style-filter-lable checkbox checked"><input class="visually-hidden"
@@ -74,7 +74,7 @@
                 </fieldset>
 
                 <fieldset class="housing-filter fieldset">
-                  <legend class="text-style-filter-title">Тип Жилья</legend>
+                  <legend class="legend text-style-filter-title">Тип Жилья</legend>
                   <ul class="unordered-list">
                     <li>
                       <label class="text-style-filter-lable radio checked"><input class="visually-hidden" type="radio"
@@ -93,7 +93,7 @@
               </div>
               <div class="filter-column-wrapper">
                 <fieldset class="price-filter fieldset">
-                  <legend class="text-style-filter-title">Стоимость, ₽:</legend>
+                  <legend class="legend text-style-filter-title">Стоимость, ₽:</legend>
                   <p class="paragraph">
                     <label>
                       <input class="filter-price-input from" type="number" name="price_from" value="0">
@@ -117,8 +117,8 @@
           </div>
         </section>
 
-        <section class="search-result-block">
-          <header class="search-result-header">
+        <section data-test="catalog" class="search-result-block">
+          <header data-test="header" class="search-result-header">
             <h2 class="h2-tag text-style-heading">Найдено гостиниц: <span>38</span></h2>
             <div class="sort-type-select-wrapper">
               <select name="sort_type" aria-label="Сортировка">
@@ -210,7 +210,7 @@
           </div>
         </section>
 
-        <section>
+        <section data-test="subscribe">
           <h2 class="h2-tag visually-hidden">Подписка на рассылку</h2>
           <form action="https://echo.htmlacademy.ru/" method="post">
             <div class="simple-text-block big-space">
@@ -219,7 +219,8 @@
                 бойскаутское!
               </p>
               <div class="subscription-input-wrapper">
-                <input class="subscription-input" type="email" name="user_email" placeholder="Ваш e-mail" required>
+                <input class="legent subscription-input" type="email" name="user_email" placeholder="Ваш e-mail"
+                  required>
                 <button class="button-tag subscription-button">Подписаться</button>
               </div>
             </div>
@@ -228,7 +229,7 @@
 
       </main>
 
-      <footer class="footer">
+      <footer data-test="footer" class="footer">
         <h2 class="h2-tag visually-hidden">Контакты.</h2>
         <address class="address">
           <a class="anchor-link footer-button vk" href="https://vk.com/htmlacademy">
