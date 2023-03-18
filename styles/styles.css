@@ -954,6 +954,10 @@ header .action-button {
   padding: 0;
 }
 
+.stars-5 {
+  background: url("../images/stars/stars_5.png") no-repeat;
+}
+
 .stars-4 {
   background: url("../images/stars/stars_4.png") no-repeat;
 }
@@ -964,6 +968,10 @@ header .action-button {
 
 .stars-2 {
   background: url("../images/stars/stars_2.png") no-repeat;
+}
+
+.stars-1 {
+  background: url("../images/stars/stars_1.png") no-repeat;
 }
 
 /* Модалка */
