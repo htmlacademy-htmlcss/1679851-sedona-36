@@ -12,7 +12,7 @@
   <body>
 
     <div class="page-wrapper">
-      <header class="page-header">
+      <header data-test="header" class="page-header">
         <a href="#" class="sedona-logo">
           <span class="visually-hidden">Логотип сайта городка Седона.</span>
         </a>
@@ -43,11 +43,11 @@
         </button>
       </header>
 
-      <main>
+      <main data-test="main">
 
         <h1 class="h1-tag visually-hidden">Городок Седона.</h1>
 
-        <section class="hero-block-wrapper">
+        <section data-test="hero" class="hero-block-wrapper">
           <h2 class="h2-tag visually-hidden">Приветствие.</h2>
           <div class="hero-background">
             <img class="hero-vector-wellcome" src="images/welcome.svg" width="458" height="352"
@@ -62,7 +62,7 @@
           <p class="paragraph text-style-simple">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
         </section>
 
-        <section>
+        <section data-test="advantages">
           <h2 class="h2-tag visually-hidden">Туристические преимущества.</h2>
           <ul class="advantages-block unordered-list">
             <li class="advantages-item blue">
@@ -146,7 +146,7 @@
           </ul>
         </section>
 
-        <section class="simple-text-block big-space">
+        <section data-test="search" class="simple-text-block big-space">
           <h2 class="h2-tag visually-hidden">Поиск гостиницы</h2>
           <div>
             <p class="paragraph text-style-heading">Заинтересовались?</p>
@@ -156,7 +156,7 @@
           <a class="anchor-link action-button big-button brown" href="catalog.html">Поиск гостиницы в Седоне</a>
         </section>
 
-        <section class="subscription-background">
+        <section data-test="subscribe" class="subscription-background">
           <h2 class="h2-tag visually-hidden">Подписка на рассылку</h2>
           <form action="https://echo.htmlacademy.ru/" method="post">
             <div class="simple-text-block big-space">
@@ -174,7 +174,7 @@
 
       </main>
 
-      <footer class="footer">
+      <footer data-test="footer" class="footer">
         <h2 class="h2-tag visually-hidden">Контакты.</h2>
         <address class="address">
           <a class="anchor-link footer-button vk" href="https://vk.com/htmlacademy">
