@@ -448,7 +448,8 @@ header .action-button {
   padding-top: 50px;
 }
 
-.hero-divider {
+.hero-background::after {
+  content: "";
   background: url("../images/divider.svg") no-repeat;
   width: auto;
   height: 57px;
@@ -496,7 +497,6 @@ header .action-button {
 
 .advantages-image-container img {
   display: block;
-  /* height: -webkit-fill-available; */
   height: 100%;
   object-fit: cover;
 }
@@ -528,36 +528,49 @@ header .action-button {
   padding: 102px 85px;
 }
 
-.advantages-item img {
-  margin-bottom: 30px;
-}
-
 .advantages-item h3 {
   width: 175px;
   margin: 0 auto;
   margin-bottom: 30px;
 }
 
-.advantages-item-divider {
+.advantages-item h3.divider::after {
+  content: "";
+  display: block;
   width: 60px;
   height: 2px;
   margin: 30px auto;
   background-color: rgba(0, 0, 0, 0.3);
 }
 
-.white + .advantages-item-divider {
+.advantages-item h3.white::after {
   background-color: rgba(255, 255, 255, 0.3);
 }
 
-.advantages-icon {
+.advantages-icon::before {
+  content: "";
+  display: inline-block;
   width: 75px;
-  height: 72px;
+  height: 75px;
+  margin-bottom: 30px;
+}
+
+.advantages-icon.house::before {
+  background: url("../images/icons/house.svg") no-repeat;
+}
+
+.advantages-icon.food::before {
+  background: url("../images/icons/food.svg") no-repeat;
+}
+
+.advantages-icon.present::before {
+  background: url("../images/icons/present.svg") no-repeat;
 }
 
 /* -subscription block */
 
 .subscription-background {
-  background: url("../images//landscapes/mountains_subscription_block.jpg") no-repeat;
+  background: url("../images/landscapes/mountains_subscription_block.jpg") no-repeat;
   width: 1200px;
 }
 
