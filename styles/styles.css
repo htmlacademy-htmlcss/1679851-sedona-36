@@ -484,17 +484,19 @@ header .action-button {
 
 .advantages-item {
   width: 400px;
-  height: 385px;
+  min-height: 385px;
 }
 
 .advantages-image-container {
   width: 800px;
-  height: 385px;
+  min-height: 385px;
 }
 
 .advantages-image-container img {
-  max-width: 100%;
-  height: auto;
+  display: block;
+  /* height: -webkit-fill-available; */
+  height: 100%;
+  object-fit: cover;
 }
 
 .advantages-item.blue {
