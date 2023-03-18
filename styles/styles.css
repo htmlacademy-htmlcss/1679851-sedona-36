@@ -410,7 +410,8 @@ header .action-button {
   font-size: 40px;
   line-height: 40px;
   text-transform: uppercase;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: 235px;
 }
 
 .html-academy-logo {
