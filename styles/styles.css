@@ -623,20 +623,21 @@ header .action-button {
   cursor: pointer;
 }
 
-.breadcrumbs-arrow {
-  display: inline-block;
-  background: url("../images/icons/breadcrumbs_arrow.svg") no-repeat;
-  width: 8px;
-  height: 12px;
-  margin: 0 10px;
-}
-
 .breadcrumbs-page {
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;
   color: #FFFFFF;
   cursor: pointer;
+}
+
+.breadcrumbs-page::before {
+  content: '';
+  display: inline-block;
+  background: url("../images/icons/breadcrumbs_arrow.svg") no-repeat;
+  width: 8px;
+  height: 12px;
+  margin: 0 10px 0 7px;
 }
 
 .filters-form-wrapper {
