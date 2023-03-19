@@ -433,7 +433,7 @@ header .action-button {
 .hero-background {
   display: flex;
   flex-direction: column;
-  background: #82B3D3 url(../images/landscapes/mountains_hero-block.jpg) no-repeat 50% 0;
+  background: #6e97bf url(../images/landscapes/mountains_hero-block.jpg) no-repeat 50% 0;
   background-size: cover;
   width: 100%;
   min-height: 485px;
@@ -574,7 +574,7 @@ header .action-button {
 /* -subscription block */
 
 .subscription-background {
-  background: url("../images/landscapes/mountains_subscription_block.jpg") no-repeat;
+  background: #6e97bf url("../images/landscapes/mountains_subscription_block.jpg") no-repeat;
   width: 1200px;
 }
 
