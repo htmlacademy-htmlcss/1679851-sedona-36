@@ -1049,11 +1049,17 @@ header .action-button {
   row-gap: 42px;
 }
 
+.modal-window-header-wrapper {
+  width: 535px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
 .modal-window-input-caption {
   align-self: center;
 }
 
-.modal-window-content-wrapper h2,
+.modal-window-header-wrapper,
 .modal-window-content-wrapper button {
   grid-column: span 2;
 }
