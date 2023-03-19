@@ -279,6 +279,11 @@ header .action-button {
   display: inline-block;
 }
 
+.modal-window-content-wrapper .action-button.big {
+  font-size: 20px;
+  line-height: 24px;
+}
+
 /* Blue buttons color-styles */
 .action-button.blue {
   background-color: #82B3D3;
