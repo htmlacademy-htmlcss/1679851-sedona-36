@@ -165,7 +165,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 .sedona-logo {
-  background: url("../images/logo.png") no-repeat;
+  background: url("../images/logo.svg") no-repeat;
   width: 140px;
   height: 70px;
   position: relative;
@@ -376,8 +376,8 @@ header .action-button {
 
 /* Footer */
 .footer {
-  height: 120px;
-  padding: 40px 70px 0 70px;
+  height: 70px;
+  padding: 45px 70px 0 70px;
 }
 
 .footer-button {
@@ -418,7 +418,7 @@ header .action-button {
 .html-academy-logo {
   width: 115px;
   height: 33px;
-  background: url("../images/html_academy.png") no-repeat;
+  background: url("../images/logo_htmlacademy.svg") no-repeat;
   display: block;
 }
 
@@ -465,7 +465,11 @@ header .action-button {
 }
 
 .simple-text-block.big-space {
-  padding: 95px 0;
+  padding: 95px 0 85px 0;
+}
+
+.simple-text-block.big-space-bottom {
+  padding: 95px 0 100px 0;
 }
 
 .simple-text-block.min-space {
@@ -576,7 +580,7 @@ header .action-button {
 
 .subscription-input-wrapper {
   display: flex;
-  margin: 44px 0 0 7px;
+  margin: 55px 0 0 7px;
 }
 
 .subscription-input {
@@ -807,7 +811,7 @@ header .action-button {
   width: 287px;
   height: 20px;
   margin-top: 57px;
-  background: url("../images/slider.png") no-repeat;
+  background: url("../images/range_slider.svg") no-repeat;
 }
 
 /* hotels */
@@ -819,7 +823,7 @@ header .action-button {
 .search-result-header {
   position: relative;
   display: flex;
-  margin-bottom: 40px;
+  margin-bottom: 35px;
 }
 
 .sort-type-select-wrapper {
@@ -903,7 +907,9 @@ header .action-button {
   display: grid;
   grid-template-columns: repeat(3, 340px);
   gap: 20px;
-  margin-bottom: 60px;
+  margin-bottom: 40px;
+  padding-bottom: 45px;
+  border-bottom: 1px solid #E6E6E6;
 }
 
 .hotel-item {
@@ -920,7 +926,7 @@ header .action-button {
 }
 
 .hotel-item img {
-  margin-bottom: 16px;
+  margin-bottom: 10px;
 }
 
 .hotel-item h3 {
@@ -944,6 +950,12 @@ header .action-button {
   margin-left: auto;
   margin-right: auto;
   align-self: center;
+  font-size: 16px;
+  line-height: 20px;
+
+  background-color: #F2F2F2;
+  padding: 8px 22px;
+  border-radius: 4px;
 }
 
 .stars {
@@ -1023,7 +1035,7 @@ header .action-button {
 .modal-window-close-button {
   width: 14px;
   height: 14px;
-  background: url("../images/close_button.svg") no-repeat;
+  background: url("../images/icons/close_button.svg") no-repeat;
   position: absolute;
   top: 85px;
   left: 633px;
@@ -1071,7 +1083,7 @@ header .action-button {
   margin-left: 383px;
   width: 16px;
   height: 15px;
-  background: url("../images/calendar.svg") no-repeat;
+  background: url("../images/icons/calendar.svg") no-repeat;
   opacity: 0.3;
   cursor: pointer;
 }
@@ -1126,11 +1138,11 @@ header .action-button {
 }
 
 .minus {
-  background: url("../images/minus.svg") 11px 13px no-repeat;
+  background: url("../images/icons/minus.svg") 11px 13px no-repeat;
 }
 
 .plus {
-  background: url("../images/plus.svg") 8px 13px no-repeat;
+  background: url("../images/icons/plus.svg") 8px 13px no-repeat;
 }
 
 .modal-window-input-caption.children::after {
@@ -1141,7 +1153,7 @@ header .action-button {
   width: 20px;
   height: 20px;
   border-radius: 10px;
-  background: #83B3D3 url("../images/info.svg") 9px 4px no-repeat;
+  background: #83B3D3 url("../images/icons/info.svg") 9px 4px no-repeat;
   cursor: pointer;
 }
 
