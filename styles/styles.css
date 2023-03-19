@@ -649,6 +649,7 @@ header .action-button {
   line-height: 21px;
   color: #FFFFFF;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .breadcrumbs-page::before {
