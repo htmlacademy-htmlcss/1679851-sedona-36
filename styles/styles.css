@@ -622,13 +622,12 @@ header .action-button {
 /* filters */
 .filter-block {
   background: #333333 url("../images/landscapes/mountains_filters-block.jpg") no-repeat;
+  background-size: cover;
   width: 100%;
-  height: 412px;
 }
 
 .filter-block-content-wrapper {
-  padding: 70px;
-  padding-top: 35px;
+  padding: 35px 70px;
 }
 
 .breadcrumbs-wrapper {
