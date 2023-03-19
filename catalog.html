@@ -38,9 +38,9 @@
               class="visually-hidden">Избранное.</span></button>
         </div>
 
-        <button type="button" class="button-tag action-button brown">
+        <a class="anchor-link action-button brown" href="modal_window.html">
           Хочу сюда!
-        </button>
+        </a>
       </header>
 
       <main data-test="main">
@@ -49,8 +49,9 @@
           <div class="filter-block-content-wrapper">
             <h1 class="h1-tag text-style-filter-heading">Гостиницы Седоны</h1>
             <div class="breadcrumbs-wrapper">
-              <span class="breadcrumbs-home-button"></span><span class="breadcrumbs-arrow"></span><span
-                class="breadcrumbs-page">Гостиницы</span>
+              <a href="index.html" class="anchor-link breadcrumbs-home-button">
+                <span class="visually-hidden">Перейти на Главную.</span></a>
+              <span class="breadcrumbs-page">Гостиницы</span>
             </div>
             <h2 class="h2-tag visually-hidden">Параметры поиска гостиниц</h2>
             <form class="filters-form-wrapper" action="https://echo.htmlacademy.ru/" method="post">
@@ -59,16 +60,16 @@
                   <legend class="legend text-style-filter-title">Инфраструктура:</legend>
                   <ul class="unordered-list">
                     <li>
-                      <label class="text-style-filter-lable checkbox checked"><input class="visually-hidden"
-                          type="checkbox" checked name="water_pool">Бассейн</label>
+                      <label tabindex="0" class="text-style-filter-lable checkbox checked"><input tabindex="-1"
+                          class="visually-hidden" type="checkbox" checked name="water_pool">Бассейн</label>
                     </li>
                     <li>
-                      <label class="text-style-filter-lable checkbox checked"><input class="visually-hidden"
-                          type="checkbox" checked name="parking">Парковка</label>
+                      <label tabindex="0" class="text-style-filter-lable checkbox checked"><input tabindex="-1"
+                          class="visually-hidden" type="checkbox" checked name="parking">Парковка</label>
                     </li>
                     <li>
-                      <label class="text-style-filter-lable checkbox"><input class="visually-hidden" type="checkbox"
-                          name="wi_fi">Wi-Fi</label>
+                      <label tabindex="0" class="text-style-filter-lable checkbox"><input tabindex="-1"
+                          class="visually-hidden" type="checkbox" name="wi_fi">Wi-Fi</label>
                     </li>
                   </ul>
                 </fieldset>
@@ -77,16 +78,17 @@
                   <legend class="legend text-style-filter-title">Тип Жилья</legend>
                   <ul class="unordered-list">
                     <li>
-                      <label class="text-style-filter-lable radio checked"><input class="visually-hidden" type="radio"
-                          name="housing_type" value="hotel" checked>Гостиница</label>
+                      <label tabindex="0" class="text-style-filter-lable radio checked"><input tabindex="-1"
+                          class="visually-hidden" type="radio" name="housing_type" value="hotel"
+                          checked>Гостиница</label>
                     </li>
                     <li>
-                      <label class="text-style-filter-lable radio"><input class="visually-hidden" type="radio"
-                          name="housing_type" value="motel">Мотель</label>
+                      <label tabindex="0" class="text-style-filter-lable radio"><input tabindex="-1"
+                          class="visually-hidden" type="radio" name="housing_type" value="motel">Мотель</label>
                     </li>
                     <li>
-                      <label class="text-style-filter-lable radio"><input class="visually-hidden" type="radio"
-                          name="housing_type" value="apartment">Апартаменты</label>
+                      <label tabindex="0" class="text-style-filter-lable radio"><input tabindex="-1"
+                          class="visually-hidden" type="radio" name="housing_type" value="apartment">Апартаменты</label>
                     </li>
                   </ul>
                 </fieldset>
@@ -105,7 +107,7 @@
                     </label>
                   </p>
 
-                  <div class="price-slider"><span class="visually-hidden">Ползунок стоимости</span></div>
+                  <div tabindex="0" class="price-slider"><span class="visually-hidden">Ползунок стоимости</span></div>
                 </fieldset>
 
                 <div class="filter-buttons-wrapper">
@@ -146,8 +148,8 @@
                 <span class="text-style-simple small price-caption">От <b>4000 ₽</b></span>
                 <a class="anchor-link action-button brown" href="#">Подробнее</a>
                 <button class="button-tag action-button blue" type="button">В избранное</button>
-                <span class="stars stars-4"></span>
-                <span class="text-style-simple small uppercase rating-caption">Рейтинг: 8,5</span>
+                <span tabindex="0" class="stars stars-4"></span>
+                <span class="text-style-simple uppercase rating-caption">Рейтинг: 8,5</span>
               </div>
             </li>
 
@@ -162,8 +164,8 @@
                 <span class="text-style-simple small price-caption">От <b>5000 ₽</b></span>
                 <a class="anchor-link action-button brown" href="#">Подробнее</a>
                 <button class="button-tag action-button green" type="button">В избранном</button>
-                <span class="stars stars-4"></span>
-                <span class="text-style-simple small uppercase rating-caption">Рейтинг: 9,2</span>
+                <span tabindex="0" class="stars stars-4"></span>
+                <span class="text-style-simple uppercase rating-caption">Рейтинг: 9,2</span>
               </div>
             </li>
 
@@ -178,8 +180,8 @@
                 <span class="text-style-simple small price-caption">От <b>2500 ₽</b></span>
                 <a class="anchor-link action-button brown" href="#">Подробнее</a>
                 <button class="button-tag action-button blue" type="button">В избранное</button>
-                <span class="stars stars-3"></span>
-                <span class="text-style-simple small uppercase rating-caption">Рейтинг: 6,9</span>
+                <span tabindex="0" class="stars stars-3"></span>
+                <span class="text-style-simple uppercase rating-caption">Рейтинг: 6,9</span>
               </div>
             </li>
 
@@ -194,18 +196,19 @@
                 <span class="text-style-simple small price-caption">От <b>1500 ₽</b></span>
                 <a class="anchor-link action-button brown" href="#">Подробнее</a>
                 <button class="button-tag action-button blue" type="button">В избранное</button>
-                <span class="stars stars-2"></span>
-                <span class="text-style-simple small uppercase rating-caption">Рейтинг: 5,0</span>
+                <span tabindex="0" class="stars stars-2"></span>
+                <span class="text-style-simple uppercase rating-caption">Рейтинг: 5,0</span>
               </div>
             </li>
           </ul>
 
           <div id="paging">
-            <button class="button-tag action-button transparent black-text" type="button" name="page_2">1</button>
+            <button class="button-tag action-button light-gray black-text" type="button" name="page_2">1</button>
             <button class="button-tag action-button blue" type="button" name="page_2">2</button>
             <button class="button-tag action-button blue" type="button" name="page_3">3</button>
             <button class="button-tag action-button blue" type="button" name="page_4">4</button>
-            <button class="button-tag action-button transparent black-text" type="button" name="page_2">...</button>
+            <button class="button-tag action-button transparent black-text" type="button" name="page_2"
+              tabindex="-1">...</button>
             <button class="button-tag action-button blue" type="button" name="page_10">10</button>
           </div>
         </section>
@@ -213,7 +216,7 @@
         <section data-test="subscribe">
           <h2 class="h2-tag visually-hidden">Подписка на рассылку</h2>
           <form action="https://echo.htmlacademy.ru/" method="post">
-            <div class="simple-text-block big-space">
+            <div class="simple-text-block big-space-bottom">
               <p class="paragraph text-style-heading">Подпишитесь на рассылку</p>
               <p class="paragraph text-style-simple">Только полезная информация и никакого спама,<br>честное
                 бойскаутское!
