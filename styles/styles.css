@@ -280,6 +280,7 @@ header .action-button {
 }
 
 .modal-window-content-wrapper .action-button.big {
+  font-family: "PT Sans", sans-serif;
   font-size: 20px;
   line-height: 24px;
 }
@@ -1025,11 +1026,9 @@ header .action-button {
 
 .modal-window {
   position: fixed;
-  left: 21.95%;
-  right: 22.03%;
-  top: 11.17%;
   width: 577px;
-
+  top: 20%;
+  left: 20%;
   padding: 64px 70px;
 
   background: #FFFFFF;
@@ -1038,12 +1037,13 @@ header .action-button {
 }
 
 .modal-window-close-button {
-  width: 14px;
-  height: 14px;
-  background: url("../images/icons/close_button.svg") no-repeat;
+  width: 52px;
+  height: 52px;
+  background: #F2F2F2 url("../images/icons/close_button.svg") no-repeat 50% 50%;
+  border-radius: 26px;
   position: absolute;
-  top: 85px;
-  left: 633px;
+  top: 67px;
+  left: 614px;
   cursor: pointer;
 }
 
@@ -1051,8 +1051,8 @@ header .action-button {
   display: grid;
   width: 100%;
   grid-template-columns: 137px 440px;
-  grid-template-rows: 58px 48px 48px 48px 60px;
-  row-gap: 42px;
+  grid-template-rows: 54px 48px 48px 48px 60px;
+  row-gap: 48px;
 }
 
 .modal-window-header-wrapper {
@@ -1071,7 +1071,8 @@ header .action-button {
 }
 
 .modal-window-content-wrapper input {
-  height: 48px;
+  width: 415px;
+  height: 45px;
   padding-left: 20px;
 
   background: #F2F2F2;
@@ -1084,25 +1085,27 @@ header .action-button {
   line-height: 24px;
 }
 
-.modal-window-content-wrapper input:focus {
+.modal-window-content-wrapper .date-input:focus {
   outline: 3px solid #83B3D3;
 }
 
-.modal-window-content-wrapper input::before {
+.modal-window-content-wrapper .date-input::before {
   position: absolute;
   content: "";
-  margin-left: 383px;
+  margin: 15px 0 0 400px;
   width: 16px;
   height: 15px;
   background: url("../images/icons/calendar.svg") no-repeat;
   opacity: 0.3;
   cursor: pointer;
+  z-index: 100;
 }
 
-.modal-window-content-wrapper input.error::after {
+.date-input.error::after {
   content: "Мы не можем отправить вас в прошлое.";
   position: absolute;
-  margin-top: 65px;
+  display: block;
+  margin: 3px 0 0 18px;
 
   font-family: "PT Sans", sans-serif;
   color: #FF5757;
@@ -1111,10 +1114,11 @@ header .action-button {
   font-weight: 400;
 }
 
-.modal-window-content-wrapper input.info::after {
+.modal-window-content-wrapper .date-input.info::after {
   content: "На эти даты есть свободные номера. Пока есть.";
   position: absolute;
-  margin-top: 65px;
+  display: block;
+  margin: 3px 0 0 18px;
 
   font-family: "PT Sans", sans-serif;
   font-size: 16px;
@@ -1126,8 +1130,8 @@ header .action-button {
 .modal-window-person-count-wrapper {
   grid-column: span 2;
   display: grid;
-  grid-template-columns: 245px 245px;
-  gap: 90px;
+  grid-template-columns: 248px 242px;
+  gap: 87px;
   align-items: center;
   justify-content: space-between;
 }
@@ -1159,18 +1163,20 @@ header .action-button {
 .modal-window-input-caption.children::after {
   content: "";
   position: absolute;
-  margin: 3px 0 0 10px;
+  margin-left: 10px;
 
-  width: 20px;
-  height: 20px;
-  border-radius: 10px;
-  background: #83B3D3 url("../images/icons/info.svg") 9px 4px no-repeat;
+  width: 26px;
+  height: 26px;
+  border-radius: 14px;
+  background: #83B3D3 url("../images/icons/info.svg") 12px 7px no-repeat;
   cursor: pointer;
 }
 
 .count-input-wrapper {
   display: flex;
   align-items: center;
+  background-color: #F2F2F2;
+  border-radius: 4px;
 }
 
 .count-control-wrapper {
