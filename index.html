@@ -244,39 +244,65 @@
       <div class="modal-window-overlay">
       </div>
       <div class="modal-window">
-        <div class="modal-window-content-wrapper text-style-filter-title black-text">
-          <h2 class="h2-tag text-style-heading uppercase">Поиск гостиницы в Седоне</h2>
-          <span class="modal-window-input-caption">Дата Заезда:</span>
-          <input class="error" type="date" name="date_from" value="2020-04-27">
-          <span class="modal-window-input-caption">Дата Выезда:</span>
-          <input class="info" type="date" name="date_to" value="2023-09-01">
-          <div class="modal-window-person-count-wrapper">
-            <div class="count-control-wrapper">
-              <span class="modal-window-input-caption">Взрослые:</span>
-              <div class="count-input-wrapper">
-                <span tabindex="0" class="person-count-button minus">
-                  <span class="visually-hidden">Минус один.</span>
-                </span>
-                <span class="person-count">2</span>
-                <span tabindex="0" class="person-count-button plus">
-                  <span class="visually-hidden">Плюс один.</span>
-                </span>
-              </div>
-            </div>
-            <div class="count-control-wrapper">
-              <span class="modal-window-input-caption children">Дети:</span>
-              <div class="count-input-wrapper">
-                <span tabindex="0" class="person-count-button minus">
-                  <span class="visually-hidden">Минус один.</span>
-                </span>
-                <span class="person-count">2</span>
-                <span tabindex="0" class="person-count-button plus">
-                  <span class="visually-hidden">Плюс один.</span>
-                </span>
-              </div>
-            </div>
+        <div class="text-style-filter-title black-text">
+          <div class="modal-window-header-wrapper">
+            <h2 class="h2-tag text-style-heading uppercase">Поиск гостиницы в Седоне</h2>
           </div>
-          <button type="button" class="button-tag action-button big blue">Найти</button>
+          <form class="modal-window-content-wrapper" action="https://echo.htmlacademy.ru/" method="post">
+            <label for="date_from" class="modal-window-input-caption">Дата Заезда:</label>
+            <span class="date-input error">
+              <input type="text" id="date_from" name="date_from" value="27 апреля 2020" placeholder="Укажите дату">
+              <span class="error">Мы не можем отправить вас в прошлое.</span>
+            </span>
+            <label for="date_to" class="modal-window-input-caption">Дата Выезда:</label>
+            <span class="date-input info">
+              <input type="text" id="date_to" name="date_to" value="1 сентября 2023" placeholder="Укажите дату">
+              <span class="info">На эти даты есть свободные номера. Пока есть.</span>
+            </span>
+            <div class="modal-window-person-count-wrapper">
+              <div class="count-control-wrapper">
+                <label for="adult-count" class="modal-window-input-caption">Взрослые:</label>
+                <div class="count-input-wrapper">
+                  <button type="button" tabindex="0" class="button-tag person-count-button minus">
+                    <svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 20 20"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path d="M3 9V11H17V9H3Z" />
+                    </svg>
+                    <span class="visually-hidden">Минус один.</span>
+                  </button>
+                  <input type="text" value="2" class="person-count-input" name="adult-count" id="adult-count">
+                  <button type="button" tabindex="0" class="button-tag person-count-button plus">
+                    <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z" />
+                    </svg>
+                    <span class="visually-hidden">Плюс один.</span>
+                  </button>
+                </div>
+              </div>
+              <div class="count-control-wrapper">
+                <label for="children-count" class="modal-window-input-caption children">Дети:</label>
+                <span tabindex="0" class="modal-window-input-caption children-info"><span
+                    class="visually-hidden">Инфо.</span></span>
+                <div class="count-input-wrapper">
+                  <button type="button" tabindex="0" class="button-tag person-count-button minus">
+                    <svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 20 20"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path d="M3 9V11H17V9H3Z" />
+                    </svg>
+                    <span class="visually-hidden">Минус один.</span>
+                  </button>
+                  <input type="text" value="2" class="person-count-input" name="children-count" id="children-count">
+                  <button type="button" tabindex="0" class="button-tag person-count-button plus">
+                    <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z" />
+                    </svg>
+                    <span class="visually-hidden">Плюс один.</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <button type="submit" class="button-tag action-button big blue">Найти</button>
+          </form>
         </div>
         <a class="anchor-link modal-window-close-button" href="index.html"><span class="visually-hidden">Закрыть
             окно.</span></a>
