@@ -1104,7 +1104,7 @@ header .action-button {
 .modal-window-content-wrapper .date-input::before {
   position: absolute;
   content: "";
-  margin: 15px 0 0 400px;
+  margin: 16px 0 0 402px;
   width: 16px;
   height: 15px;
   background: url("../images/icons/calendar.svg") no-repeat;
@@ -1117,7 +1117,7 @@ header .action-button {
   content: "Мы не можем отправить вас в прошлое.";
   position: absolute;
   display: block;
-  margin: 3px 0 0 18px;
+  margin: 3px 0 0 20px;
 
   font-family: "PT Sans", sans-serif;
   color: #FF5757;
@@ -1130,7 +1130,7 @@ header .action-button {
   content: "На эти даты есть свободные номера. Пока есть.";
   position: absolute;
   display: block;
-  margin: 3px 0 0 18px;
+  margin: 3px 0 0 20px;
 
   font-family: "PT Sans", sans-serif;
   font-size: 16px;
