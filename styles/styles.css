@@ -1027,8 +1027,8 @@ header .action-button {
 .modal-window {
   position: fixed;
   width: 577px;
-  top: 20%;
-  left: 20%;
+  top: calc(50% - 576px/2);
+  left: calc(50% - 688px/2);
   padding: 64px 70px;
 
   background: #FFFFFF;
