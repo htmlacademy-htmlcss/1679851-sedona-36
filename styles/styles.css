@@ -1136,6 +1136,7 @@ header .action-button {
 .person-count-button {
   width: 40px;
   height: 48px;
+  border: none;
   cursor: pointer;
 }
 
