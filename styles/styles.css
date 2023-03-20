@@ -1181,16 +1181,40 @@ input.person-count-input {
   background: url("../images/icons/plus.svg") 8px 13px no-repeat;
 }
 
-.modal-window-input-caption.children::after {
-  content: "";
-  position: absolute;
-  margin-left: 10px;
+.modal-window-input-caption.children-info {
+  margin-left: -34px;
 
   width: 26px;
   height: 26px;
   border-radius: 14px;
   background: #83B3D3 url("../images/icons/info.svg") 12px 7px no-repeat;
   cursor: pointer;
+}
+
+.children-info:hover::before {
+  content: "";
+  position: absolute;
+  margin: 33px 0 0 3px;
+  width: 19px;
+  height: 9px;
+  background: url("../images/icons/triangle.svg") no-repeat;
+}
+
+.children-info:hover::after {
+  content: "Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.";
+  position: absolute;
+  background: #333333;
+  width: 218px;
+  margin: 42px 0 0 -109px;
+
+  border-radius: 10px;
+  padding: 15px 18px 18px 22px;
+
+  color: #FFFFFF;
+  font-family: "PT Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
 }
 
 .count-input-wrapper {
