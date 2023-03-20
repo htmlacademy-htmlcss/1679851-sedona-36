@@ -769,7 +769,7 @@ input[type="checkbox"]:checked + .checkbox::before {
 
 
 input[type="radio"]:checked + .radio::before {
-  background: #FFFFFF url("../images/icons/circle.svg") no-repeat 4px 5px;
+  background: #FFFFFF url("../images/icons/circle.svg") no-repeat 5px 5px;
 }
 
 .price-filter {
@@ -842,6 +842,7 @@ input[type="radio"]:checked + .radio::before {
   width: 287px;
   height: 20px;
   margin-top: 62px;
+  display: flex;
 }
 
 .price-slider .progress-line,
@@ -869,10 +870,23 @@ input[type="radio"]:checked + .radio::before {
   border-radius: 5px;
   border: none;
   background-color: #FFFFFF;
+  z-index: 1;
 }
 
 .range-to-button {
   margin-left: 180px;
+}
+
+.range-from-button:focus,
+.range-to-button:focus {
+  box-sizing: border-box;
+  outline: 3px solid #83B3D3;
+}
+
+.range-from-button:active,
+.range-to-button:active {
+  box-sizing: border-box;
+  outline: 2px solid #83B3D3;
 }
 
 /* hotels */
