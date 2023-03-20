@@ -207,37 +207,37 @@
             <h2 class="h2-tag text-style-heading uppercase">Поиск гостиницы в Седоне</h2>
           </div>
           <form class="modal-window-content-wrapper" action="https://echo.htmlacademy.ru/" method="post">
-            <span class="modal-window-input-caption">Дата Заезда:</span>
+            <label for="date_from" class="modal-window-input-caption">Дата Заезда:</label>
             <span class="date-input error">
-              <input type="text" name="date_from" value="27 апреля 2020">
+              <input type="text" id="date_from" name="date_from" value="27 апреля 2020">
               <span class="error">Мы не можем отправить вас в прошлое.</span>
             </span>
-            <span class="modal-window-input-caption">Дата Выезда:</span>
+            <label for="date_to" class="modal-window-input-caption">Дата Выезда:</label>
             <span class="date-input info">
-              <input type="text" name="date_to" value="1 сентября 2023">
+              <input type="text" id="date_to" name="date_to" value="1 сентября 2023">
               <span class="info">На эти даты есть свободные номера. Пока есть.</span>
             </span>
             <div class="modal-window-person-count-wrapper">
               <div class="count-control-wrapper">
-                <span class="modal-window-input-caption">Взрослые:</span>
+                <label for="adult-count" class="modal-window-input-caption">Взрослые:</label>
                 <div class="count-input-wrapper">
                   <button type="button" tabindex="0" class="person-count-button minus">
                     <span class="visually-hidden">Минус один.</span>
                   </button>
-                  <input type="text" value="2" class="person-count-input" name="adult-count">
+                  <input type="text" value="2" class="person-count-input" name="adult-count" id="adult-count">
                   <button type="button" tabindex="0" class="person-count-button plus">
                     <span class="visually-hidden">Плюс один.</span>
                   </button>
                 </div>
               </div>
               <div class="count-control-wrapper">
-                <span class="modal-window-input-caption children">Дети:</span>
+                <label for="children-count" class="modal-window-input-caption children">Дети:</label>
                 <span class="modal-window-input-caption children-info"><span class="visually-hidden">Инфо.</span></span>
                 <div class="count-input-wrapper">
                   <button type="button" tabindex="0" class="person-count-button minus">
                     <span class="visually-hidden">Минус один.</span>
                   </button>
-                  <input type="text" value="2" class="person-count-input" name="children-count">
+                  <input type="text" value="2" class="person-count-input" name="children-count" id="children-count">
                   <button type="button" tabindex="0" class="person-count-button plus">
                     <span class="visually-hidden">Плюс один.</span>
                   </button>
