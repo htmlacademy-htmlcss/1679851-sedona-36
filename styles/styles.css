@@ -76,6 +76,7 @@ body {
 
 .button-tag {
   padding: 0;
+  outline: none;
 }
 
 .h1-tag,
@@ -365,9 +366,13 @@ header .action-button {
   background-color: transparent;
 }
 
+.action-button.transparent:hover {
+  color: rgba(255, 255, 255, 0.6);
+}
+
 .action-button.transparent:focus,
 .action-button.light-gray:focus {
-  outline: 3px solid #83B3D3;
+  border: 3px solid #83B3D3;
 }
 
 .action-button.transparent:active,
@@ -824,7 +829,9 @@ input[type="radio"]:checked + .radio::before {
 }
 
 .filter-buttons-wrapper button[type="button"] {
-  margin-left: 8px;
+  margin-left: 0;
+  border: 3px solid transparent;
+  width: 100%;
 }
 
 .filter-buttons-wrapper button[type="submit"] {
