@@ -188,6 +188,10 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   padding: 0 15px;
 }
 
+.header-navigation li:last-of-type {
+  margin-left: 3px;
+}
+
 .header-navigation a {
   font-size: 20px;
   font-weight: 700;
@@ -226,7 +230,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 .search-button {
-  background: url('../images/icons/search.svg') no-repeat 50% 50%;
+  background: url('../images/icons/search.svg') no-repeat 17px 50%;
 }
 
 .favotites-button {
