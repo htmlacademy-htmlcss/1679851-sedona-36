@@ -841,7 +841,8 @@ header .action-button {
 .search-result-header {
   position: relative;
   display: flex;
-  margin-bottom: 35px;
+  margin-bottom: 38px;
+  align-items: center;
 }
 
 .sort-type-select-wrapper {
@@ -849,11 +850,11 @@ header .action-button {
 }
 
 .search-result-header select {
-  width: 290px;
-  height: 50px;
+  width: 293px;
+  height: 48px;
   border: 2px solid #E5E5E5;
   border-radius: 4px;
-  padding-left: 20px;
+  padding-left: 18px;
   background: transparent;
 
   font-family: "PT Sans", sans-serif;
@@ -880,7 +881,7 @@ header .action-button {
 .sort-type-select-wrapper::after {
   position: absolute;
   content: "";
-  margin: 20px 0 0 -35px;
+  margin: 20px 0 0 -32px;
   width: 12px;
   height: 8px;
   background: url("../images/icons/arrow_down.svg") no-repeat;
