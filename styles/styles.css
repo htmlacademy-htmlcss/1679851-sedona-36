@@ -305,10 +305,13 @@ header .action-button {
   background-color: #68A2CA;
 }
 
-.subscription-button:active,
-.action-button.blue:active,
 .subscription-button:focus,
 .action-button.blue:focus {
+  background-color: #68A2CA;
+}
+
+.subscription-button:active,
+.action-button.blue:active {
   color: rgba(255, 255, 255, 0.3);
   background-color: #68A2CA;
 }
@@ -749,9 +752,7 @@ input[type="checkbox"]:checked + .checkbox::before {
 
 .footer-phone:hover,
 .header-icon-button:hover,
-.header-button:hover,
-.person-count-button:hover,
-.modal-window-close-button:hover {
+.header-button:hover {
   color: #000000;
   opacity: 0.7;
 }
@@ -1115,6 +1116,21 @@ input[type="radio"]:checked + .radio::before {
   cursor: pointer;
 }
 
+.modal-window-close-button:hover {
+  background-color: #E6E6E6;
+}
+
+.modal-window-close-button:focus {
+  background-color: #E6E6E6;
+  outline: #83B3D3 3px solid;
+}
+
+.modal-window-close-button:active {
+  background-color: #E6E6E6;
+  opacity: 0.3;
+  outline: none;
+}
+
 .modal-window-content-wrapper {
   display: grid;
   width: 100%;
@@ -1134,7 +1150,7 @@ input[type="radio"]:checked + .radio::before {
   align-self: center;
 }
 
-.modal-window-content-wrapper button {
+.modal-window-content-wrapper > button {
   grid-column: span 2;
 }
 
@@ -1188,8 +1204,9 @@ input[type="radio"]:checked + .radio::before {
 }
 
 .person-count-button {
-  width: 40px;
-  height: 48px;
+  width: 20px;
+  height: 20px;
+  margin: 14px 10px;
   border: none;
   cursor: pointer;
 }
@@ -1208,6 +1225,10 @@ input.person-count-input {
   line-height: 24px;
 }
 
+input.person-count-input:focus {
+  outline: none;
+}
+
 .modal-window-content-wrapper .date-input input {
   width: 415px;
   height: 50px;
@@ -1223,17 +1244,39 @@ input.person-count-input {
   line-height: 24px;
 }
 
-.person-count-button:hover {
-  color: #000000;
-  opacity: 0.7;
+.modal-window-content-wrapper .date-input input:focus {
+  background-color: #E6E6E6;
+  outline: 3px solid #83B3D3;
 }
 
-.minus {
-  background: url("../images/icons/minus.svg") 11px 13px no-repeat;
+.modal-window-content-wrapper .date-input input:focus-visible:not(:placeholder-shown) {
+  background-color: #E6E6E6;
+  border: 2px solid #000000;
+  outline: none;
 }
 
-.plus {
-  background: url("../images/icons/plus.svg") 8px 13px no-repeat;
+.modal-window-content-wrapper .date-input input:placeholder-shown {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.minus:focus,
+.plus:focus {
+  outline: 3px solid #82B3D3;
+  border-radius: 4px;
+  fill: #000000;
+}
+
+.minus:hover,
+.plus:hover {
+  fill: #000000;
+}
+
+.minus,
+.minus:active,
+.plus,
+.plus:active {
+  fill: #756157;
+  outline: none;
 }
 
 .modal-window-input-caption.children-info {
@@ -1272,6 +1315,11 @@ input.person-count-input {
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
+}
+
+.children-info:hover,
+.children-info:focus {
+  outline: none;
 }
 
 .count-input-wrapper {
