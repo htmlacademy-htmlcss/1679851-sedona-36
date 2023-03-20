@@ -67,6 +67,7 @@ body {
 
 .unordered-list label {
   user-select: none;
+  cursor: pointer;
 }
 
 .anchor-link {
@@ -1197,7 +1198,8 @@ input.person-count-input {
   cursor: pointer;
 }
 
-.children-info:hover::before {
+.children-info:hover::before,
+.children-info:focus::before {
   content: "";
   position: absolute;
   margin: 33px 0 0 3px;
@@ -1206,7 +1208,8 @@ input.person-count-input {
   background: url("../images/icons/triangle.svg") no-repeat;
 }
 
-.children-info:hover::after {
+.children-info:hover::after,
+.children-info:focus::after {
   content: "Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.";
   position: absolute;
   background: #333333;
