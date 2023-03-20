@@ -377,6 +377,16 @@ header .action-button {
   background-color: #F2F2F2;
 }
 
+#paging .action-button.light-gray:active {
+  color: #000000;
+}
+
+#paging .action-button.light-gray:focus {
+  color: #000000;
+  outline: none;
+  border: none;
+}
+
 /* Transparent buttons color-styles */
 .action-button.transparent {
   background-color: transparent;
