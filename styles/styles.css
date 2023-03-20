@@ -414,21 +414,28 @@ header .action-button {
 .footer-button {
   display: inline-block;
   border: none;
-  width: 47px;
-  height: 35px;
+  padding: 12px 12px;
   cursor: pointer;
+  fill: #83B3D3;
 }
 
-.footer-button.vk {
-  background: url("../images/icons/vk.svg") no-repeat 50% 12px;
+.footer-button:hover {
+  fill: #68A2CA;
 }
 
-.footer-button.telegram {
-  background: url("../images/icons/telegram.svg") no-repeat 50% 12px;
+.footer-button:focus {
+  outline: none;
+  fill: #68A2CA;
+}
+
+.footer-button:active {
+  outline: none;
+  fill: #68A2CA;
+  opacity: 0.3;
 }
 
 .footer-button.youtube {
-  background: url("../images/icons/youtube.svg") no-repeat 50% 12px;
+  margin-left: 3px;
 }
 
 .address {
@@ -446,11 +453,43 @@ header .action-button {
   margin-right: 235px;
 }
 
-.html-academy-logo {
+.footer-phone:hover {
+  color: #756157;
+}
+
+.footer-phone:focus-visible {
+  outline: none;
+  color: #756157;
+}
+
+.footer-phone:active {
+  outline: none;
+  color: #756157;
+  opacity: 0.3;
+}
+
+.html-academy-logo svg {
   width: 115px;
   height: 40px;
-  background: url("../images/logo_htmlacademy.svg") no-repeat 0 3px;
   display: block;
+  fill: #000000;
+}
+
+.html-academy-logo svg:hover {
+  fill: #756157;
+}
+
+.html-academy-logo svg:active {
+  fill: #756157;
+  opacity: 0.3;
+}
+
+.html-academy-logo:focus {
+  outline: none;
+}
+
+.html-academy-logo:focus svg {
+  fill: #756157;
 }
 
 
@@ -756,8 +795,6 @@ input[type="checkbox"]:checked + .checkbox::before {
 
 .checkbox:hover,
 .radio:hover,
-.footer-button:hover,
-.html-academy-logo:hover,
 .breadcrumbs-page:hover:not(:last-child),
 .breadcrumbs-home-button:hover {
   color: #FFFFFF;
@@ -778,7 +815,6 @@ input[type="checkbox"]:checked + .checkbox::before {
   outline: 3px solid #83B3D3;
 }
 
-.footer-phone:hover,
 .header-icon-button:hover,
 .header-button:hover {
   color: #000000;
