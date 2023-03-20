@@ -61,16 +61,19 @@
                   <legend class="legend text-style-filter-title">Инфраструктура:</legend>
                   <ul class="unordered-list">
                     <li>
-                      <label tabindex="0" class="text-style-filter-lable checkbox checked"><input tabindex="-1"
-                          class="visually-hidden" type="checkbox" checked name="water_pool">Бассейн</label>
+                      <input tabindex="-1" class="visually-hidden" type="checkbox" checked name="water_pool"
+                        id="water_pool">
+                      <label for="water_pool" tabindex="0"
+                        class="text-style-filter-lable checkbox checked">Бассейн</label>
                     </li>
                     <li>
-                      <label tabindex="0" class="text-style-filter-lable checkbox checked"><input tabindex="-1"
-                          class="visually-hidden" type="checkbox" checked name="parking">Парковка</label>
+                      <input tabindex="-1" class="visually-hidden" type="checkbox" checked name="parking" id="parking">
+                      <label for="parking" tabindex="0"
+                        class="text-style-filter-lable checkbox checked">Парковка</label>
                     </li>
                     <li>
-                      <label tabindex="0" class="text-style-filter-lable checkbox"><input tabindex="-1"
-                          class="visually-hidden" type="checkbox" name="wi_fi">Wi-Fi</label>
+                      <input tabindex="-1" class="visually-hidden" type="checkbox" name="wi_fi" id="wi_fi">
+                      <label for="wi_fi" tabindex="0" class="text-style-filter-lable checkbox">Wi-Fi</label>
                     </li>
                   </ul>
                 </fieldset>
@@ -79,17 +82,19 @@
                   <legend class="legend text-style-filter-title">Тип Жилья</legend>
                   <ul class="unordered-list">
                     <li>
-                      <label tabindex="0" class="text-style-filter-lable radio checked"><input tabindex="-1"
-                          class="visually-hidden" type="radio" name="housing_type" value="hotel"
-                          checked>Гостиница</label>
+                      <input tabindex="-1" class="visually-hidden" type="radio" name="housing_type" id="hotel"
+                        value="hotel" checked>
+                      <label tabindex="0" for="hotel" class="text-style-filter-lable radio">Гостиница</label>
                     </li>
                     <li>
-                      <label tabindex="0" class="text-style-filter-lable radio"><input tabindex="-1"
-                          class="visually-hidden" type="radio" name="housing_type" value="motel">Мотель</label>
+                      <input tabindex="-1" class="visually-hidden" type="radio" name="housing_type" id="motel"
+                        value="motel">
+                      <label tabindex="0" for="motel" class="text-style-filter-lable radio">Мотель</label>
                     </li>
                     <li>
-                      <label tabindex="0" class="text-style-filter-lable radio"><input tabindex="-1"
-                          class="visually-hidden" type="radio" name="housing_type" value="apartment">Апартаменты</label>
+                      <input tabindex="-1" class="visually-hidden" type="radio" name="housing_type" id="apartment"
+                        value="apartment">
+                      <label tabindex="0" for="apartment" class="text-style-filter-lable radio">Апартаменты</label>
                     </li>
                   </ul>
                 </fieldset>
@@ -108,7 +113,8 @@
                     </label>
                   </p>
 
-                  <div tabindex="0" class="price-slider"><span class="visually-hidden">Ползунок стоимости</span></div>
+                  <div tabindex="0" class="price-slider"><span class="visually-hidden">Ползунок стоимости</span>
+                  </div>
                 </fieldset>
 
                 <div class="filter-buttons-wrapper">

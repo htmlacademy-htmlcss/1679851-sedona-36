@@ -65,6 +65,10 @@ body {
   list-style-type: none;
 }
 
+.unordered-list label {
+  user-select: none;
+}
+
 .anchor-link {
   text-decoration: none;
 }
@@ -723,7 +727,7 @@ header .action-button {
   background: #FFFFFF;
 }
 
-.checked.checkbox::before {
+input[type="checkbox"]:checked + .checkbox::before {
   background: #FFFFFF url("../images/icons/check.svg") no-repeat 4px 5px;
 }
 
@@ -757,8 +761,9 @@ header .action-button {
   background: #FFFFFF;
 }
 
-.checked.radio::before {
-  background: #FFFFFF url("../images/icons/circle.svg") no-repeat 5px 5px;
+
+input[type="radio"]:checked + .radio::before {
+  background: #FFFFFF url("../images/icons/circle.svg") no-repeat 4px 5px;
 }
 
 .price-filter {
