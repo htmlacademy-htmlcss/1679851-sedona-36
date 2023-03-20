@@ -326,9 +326,13 @@ header .action-button {
   background-color: #756157;
 }
 
-.action-button.brown:hover,
+.action-button.brown:hover {
+  background-color: #615048;
+}
+
 .action-button.brown:focus {
   background-color: #615048;
+  outline: none;
 }
 
 .action-button.brown:active {
@@ -345,9 +349,13 @@ header .action-button {
   background-color: #7DB54F;
 }
 
-.action-button.green:hover,
+.action-button.green:hover {
+  background-color: #6C9E42;
+}
+
 .action-button.green:focus {
   background-color: #6C9E42;
+  outline: none;
 }
 
 .action-button.green:active {
