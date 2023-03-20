@@ -835,7 +835,37 @@ input[type="radio"]:checked + .radio::before {
   width: 287px;
   height: 20px;
   margin-top: 62px;
-  background: url("../images/range_slider.svg") no-repeat;
+}
+
+.price-slider .progress-line,
+.price-slider .progress-line-active {
+  position: absolute;
+  height: 4px;
+  display: inline-block;
+  margin-top: 8px;
+}
+
+.price-slider .progress-line {
+  background-color: rgba(255, 255, 255, 0.3);
+  width: 287px;
+}
+
+.price-slider .progress-line-active {
+  background-color: #FFFFFF;
+  width: 220px;
+}
+
+.range-from-button,
+.range-to-button {
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
+  border: none;
+  background-color: #FFFFFF;
+}
+
+.range-to-button {
+  margin-left: 180px;
 }
 
 /* hotels */
