@@ -681,6 +681,12 @@ header .action-button {
   cursor: pointer;
 }
 
+.breadcrumbs-home-button:focus,
+.breadcrumbs-page:focus {
+  outline: none;
+  opacity: 1;
+}
+
 .breadcrumbs-page {
   font-weight: 400;
   font-size: 16px;
@@ -752,14 +758,15 @@ input[type="checkbox"]:checked + .checkbox::before {
 .radio:hover,
 .footer-button:hover,
 .html-academy-logo:hover,
-.breadcrumbs-page:not(:last-of-type):hover,
+.breadcrumbs-page:hover:not(:last-child),
 .breadcrumbs-home-button:hover {
   color: #FFFFFF;
   opacity: 0.7;
 }
 
 .checkbox:active,
-.radio:active {
+.radio:active,
+.breadcrumbs-home-button:active {
   opacity: 0.3;
 }
 
