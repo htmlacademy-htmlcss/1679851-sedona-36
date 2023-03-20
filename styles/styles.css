@@ -645,11 +645,10 @@ header .action-button {
 }
 
 .filter-block-content-wrapper {
-  padding: 35px 70px;
+  padding: 32px 70px 55px 70px;
 }
 
 .breadcrumbs-wrapper {
-  padding-left: 3px;
   margin-bottom: 30px;
 }
 
@@ -673,18 +672,19 @@ header .action-button {
 .breadcrumbs-page::before {
   content: '';
   display: inline-block;
-  background: url("../images/icons/breadcrumbs_arrow.svg") no-repeat;
+  background: url("../images/icons/breadcrumbs_arrow.svg") no-repeat 0 1px;
   width: 8px;
   height: 12px;
-  margin: 0 10px 0 7px;
+  margin: 0 10px 0 5px;
 }
 
 .filters-form-wrapper {
   display: flex;
+  padding-top: 12px;
 }
 
 .filters-form-wrapper label {
-  height: 28px;
+  height: 23px;
   cursor: pointer;
 }
 
@@ -703,7 +703,7 @@ header .action-button {
 }
 
 .legend {
-  margin-bottom: 32px;
+  margin: 32px 0 30px -2px;
 }
 
 .text-style-filter-lable {
@@ -750,7 +750,7 @@ header .action-button {
   position: absolute;
   content: "";
   display: inline-block;
-  margin: 2px 0 0 -35px;
+  margin: 1px 0 0 -37px;
   width: 21px;
   height: 21px;
   border-radius: 10px;
@@ -806,7 +806,7 @@ header .action-button {
   line-height: 24px;
   color: #BEBEBE;
   position: absolute;
-  margin: 12px 0 0 -32px;
+  margin: 13px 0 0 -39px;
 }
 
 .filter-buttons-wrapper {
@@ -818,7 +818,7 @@ header .action-button {
 }
 
 .filter-buttons-wrapper button[type="button"] {
-  margin-left: 5px;
+  margin-left: 8px;
 }
 
 .filter-buttons-wrapper button[type="submit"] {
@@ -828,7 +828,7 @@ header .action-button {
 .price-slider {
   width: 287px;
   height: 20px;
-  margin-top: 57px;
+  margin-top: 62px;
   background: url("../images/range_slider.svg") no-repeat;
 }
 
