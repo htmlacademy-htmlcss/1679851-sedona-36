@@ -1100,8 +1100,7 @@ header .action-button {
   z-index: 100;
 }
 
-.date-input.error::after {
-  content: "Мы не можем отправить вас в прошлое.";
+.date-input .error {
   position: absolute;
   display: block;
   margin: 3px 0 0 20px;
@@ -1113,11 +1112,10 @@ header .action-button {
   font-weight: 400;
 }
 
-.modal-window-content-wrapper .date-input.info::after {
-  content: "На эти даты есть свободные номера. Пока есть.";
+.date-input .info {
   position: absolute;
   display: block;
-  margin: 3px 0 0 20px;
+  margin-left: 20px;
 
   font-family: "PT Sans", sans-serif;
   font-size: 16px;
